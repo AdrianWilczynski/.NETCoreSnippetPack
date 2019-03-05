@@ -1,0 +1,171 @@
+{
+    "Class and Namespace": {
+        "prefix": "class-namespace",
+        "body": [
+            "using System;",
+            "using System.Collections.Generic;",
+            "using System.Linq;",
+            "using System.Threading.Tasks;",
+            "",
+            "namespace ${1:Namespace}",
+            "{",
+            "\tpublic class ${TM_FILENAME_BASE}",
+            "\t{",
+            "\t\t$0",
+            "\t}",
+            "}"
+        ]
+    },
+    "Interface and Namespace": {
+        "prefix": "interface-namespace",
+        "body": [
+            "using System;",
+            "using System.Collections.Generic;",
+            "using System.Linq;",
+            "using System.Threading.Tasks;",
+            "",
+            "namespace ${1:Namespace}",
+            "{",
+            "\tinterface ${TM_FILENAME_BASE}",
+            "\t{",
+            "\t\t$0",
+            "\t}",
+            "}"
+        ]
+    },
+    "MVC Controller": {
+        "prefix": "asp-mvc-controller",
+        "body": [
+            "using System;",
+            "using System.Collections.Generic;",
+            "using System.Linq;",
+            "using System.Threading.Tasks;",
+            "using Microsoft.AspNetCore.Mvc;",
+            "",
+            "namespace ${1:Namespace}",
+            "{",
+            "\tpublic class ${TM_FILENAME_BASE} : Controller",
+            "\t{",
+            "\t\tpublic IActionResult Index()",
+            "\t\t{",
+            "\t\t\treturn View();",
+            "\t\t}",
+            "\t}",
+            "}"
+        ]
+    },
+    "API Controller": {
+        "prefix": "asp-api-controller",
+        "body": [
+            "using System;",
+            "using System.Collections.Generic;",
+            "using System.Linq;",
+            "using System.Threading.Tasks;",
+            "using Microsoft.AspNetCore.Mvc;",
+            "",
+            "namespace ${1:Namespace}",
+            "{",
+            "\t[Route(\"api/[controller]\")]",
+            "\t[ApiController]",
+            "\tpublic class ${TM_FILENAME_BASE} : ControllerBase",
+            "\t{",
+            "\t\t[HttpGet]",
+            "\t\tpublic ActionResult<IEnumerable<string>> Get()",
+            "\t\t{",
+            "\t\t\treturn new string[] { \"value1\", \"value2\" };",
+            "\t\t}",
+            "",
+            "\t\t[HttpGet(\"{id}\")]",
+            "\t\tpublic ActionResult<string> Get(int id)",
+            "\t\t{",
+            "\t\t\treturn \"value\";",
+            "\t\t}",
+            "",
+            "\t\t[HttpPost]",
+            "\t\tpublic void Post([FromBody] string value)",
+            "\t\t{",
+            "\t\t}",
+            "",
+            "\t\t[HttpPut(\"{id}\")]",
+            "\t\tpublic void Put(int id, [FromBody] string value)",
+            "\t\t{",
+            "\t\t}",
+            "",
+            "\t\t[HttpDelete(\"{id}\")]",
+            "\t\tpublic void Delete(int id)",
+            "\t\t{",
+            "\t\t}",
+            "\t}",
+            "}"
+        ]
+    },
+    "Page Model": {
+        "prefix": "asp-page-model",
+        "body": [
+            "using System;",
+            "using System.Collections.Generic;",
+            "using System.Linq;",
+            "using System.Threading.Tasks;",
+            "using Microsoft.AspNetCore.Mvc;",
+            "using Microsoft.AspNetCore.Mvc.RazorPages;",
+            "",
+            "namespace ${1:Namespace}",
+            "{",
+            "\tpublic class ${TM_FILENAME_BASE/(.*)\\..+$/$1/}Model : PageModel",
+            "\t{",
+            "\t\tpublic void OnGet()",
+            "\t\t{",
+            "\t\t}",
+            "\t}",
+            "}"
+        ]
+    },
+    "View Component": {
+        "prefix": "asp-view-component",
+        "body": [
+            "using System;",
+            "using System.Collections.Generic;",
+            "using System.Linq;",
+            "using System.Threading.Tasks;",
+            "using Microsoft.AspNetCore.Mvc;",
+            "",
+            "namespace ${1:Namespace}",
+            "{",
+            "\tpublic class ${TM_FILENAME_BASE} : ViewComponent",
+            "\t{",
+            "\t\tpublic IViewComponentResult Invoke()",
+            "\t\t{",
+            "\t\t\treturn View();",
+            "\t\t}",
+            "\t}",
+            "}"
+        ]
+    },
+    "MVC Action": {
+        "prefix": "asp-action",
+        "body": [
+            "public IActionResult ${1:ActionName}()",
+            "{",
+            "\t$0return View();",
+            "}"
+        ]
+    },
+    "DbContext": {
+        "prefix": "ef-db-context",
+        "body": [
+            "using System;",
+            "using System.Collections.Generic;",
+            "using System.Linq;",
+            "using System.Threading.Tasks;",
+            "using Microsoft.EntityFrameworkCore;",
+            "",
+            "namespace ${1:Namespace}",
+            "{",
+            "\tpublic class ${TM_FILENAME_BASE} : DbContext",
+            "\t{",
+            "\t\tpublic ${TM_FILENAME_BASE}(DbContextOptions<${TM_FILENAME_BASE}> options) : base(options) { }",
+            "\t}",
+            "}"
+        ]
+    }
+}

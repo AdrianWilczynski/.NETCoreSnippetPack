@@ -1,0 +1,131 @@
+{
+    "asp-for Tag Helper": {
+        "prefix": "asp-for",
+        "body": [
+            "asp-for=\"${1:ModelProperty}\""
+        ]
+    },
+    "asp-action Tag Helper": {
+        "prefix": "asp-action",
+        "body": [
+            "asp-action=\"${1:ActionName}\""
+        ]
+    },
+    "asp-controller Tag Helper": {
+        "prefix": "asp-controller",
+        "body": [
+            "asp-controller=\"${1:ControllerName}\""
+        ]
+    },
+    "asp-area Tag Helper": {
+        "prefix": "asp-area",
+        "body": [
+            "asp-area=\"${1:AreaName}\""
+        ]
+    },
+    "asp-route Tag Helper": {
+        "prefix": "asp-route",
+        "body": [
+            "asp-route=\"${1:RouteName}\""
+        ]
+    },
+    "asp-page Tag Helper": {
+        "prefix": "asp-page",
+        "body": [
+            "asp-page=\"${1:PageName}\""
+        ]
+    },
+    "asp-page-handler Tag Helper": {
+        "prefix": "asp-page-handler",
+        "body": [
+            "asp-page-handler=\"${1:PageHandlerName}\""
+        ]
+    },
+    "asp-validation-for Tag Helper": {
+        "prefix": "asp-validation-for",
+        "body": [
+            "asp-validation-for=\"${1:ModelProperty}\""
+        ]
+    },
+    "asp-validation-summary Tag Helper": {
+        "prefix": "asp-validation-summary",
+        "body": [
+            "asp-validation-summary=\"${1|All,ModelOnly,None|}\""
+        ]
+    },
+    "asp-route-... Tag Helper": {
+        "prefix": "asp-route-...",
+        "body": [
+            "asp-route-${1:paramName}=\"${2:Value}\""
+        ]
+    },
+    "asp-all-route-data Tag Helper": {
+        "prefix": "asp-all-route-data",
+        "body": [
+            "asp-all-route-data=\"${1:Dictionary}\""
+        ]
+    },
+    "asp-fragment Tag Helper": {
+        "prefix": "asp-fragment",
+        "body": [
+            "asp-fragment=\"${1:Fragment}\""
+        ]
+    },
+    "asp-protocol Tag Helper": {
+        "prefix": "asp-protocol",
+        "body": [
+            "asp-protocol=\"${1:https}\""
+        ]
+    },
+    "asp-items Tag Helper": {
+        "prefix": "asp-items",
+        "body": [
+            "asp-items=\"${1:SelectList}\""
+        ]
+    },
+    "Partial View Tag Helper": {
+        "prefix": "asp-partial",
+        "body": [
+            "<partial name=\"${1:PartialName}\" />"
+        ]
+    },
+    "View Component Tag Helper": {
+        "prefix": "asp-view-component",
+        "body": [
+            "<vc:${1:ViewComponentName}></vc:${1:ViewComponentName}>"
+        ]
+    },
+    "Cache Tag Helper": {
+        "prefix": "asp-cache",
+        "body": [
+            "<cache>$0</cache>"
+        ]
+    },
+    "Environment Tag Helper": {
+        "prefix": "asp-environment",
+        "body": [
+            "<environment ${1|names,include,exclude|}=\"${2|Development,Staging,Production|}\">$0</environment>"
+        ]
+    },
+    "View Template": {
+        "prefix": "asp-view",
+        "body": [
+            "@model ${1:Model}",
+            "@{",
+            "\tViewData[\"Title\"] = \"${2:${TM_FILENAME_BASE}}\";",
+            "}",
+            "$0"
+        ]
+    },
+    "Page Template": {
+        "prefix": "asp-razor-page",
+        "body": [
+            "@page",
+            "@model ${TM_FILENAME_BASE}Model",
+            "@{",
+            "\tViewData[\"Title\"] = \"${1:${TM_FILENAME_BASE}}\";",
+            "}",
+            "$0"
+        ]
+    }
+}
