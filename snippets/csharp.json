@@ -146,7 +146,8 @@
         "body": [
             "public IActionResult ${1:ActionName}()",
             "{",
-            "\t$0return View();",
+            "\t$0",
+            "\treturn View();",
             "}"
         ]
     },
