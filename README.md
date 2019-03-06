@@ -1,10 +1,13 @@
 # ASP.NET Core Snippet Pack
 
-## CSharp
+## C\#
 | Prefix                          | Renders                                                                |
 | ------------------------------- | ---------------------------------------------------------------------- |
 | class-namespace                 | Class and Namespace with some common Usings                            |
 | interface-namespace             | Interface and Namespace with some common Usings                        |
+| namespace-guess                 | Namespace based on directory structure*                                |
+
+\* For namespace guessing to work your project's root folder must be in one of the following directories: repos, src, test, projects, desktop. Folder name matching is case insensitive.
 
 ### ASP.NET Core
 | Prefix                          | Renders                                                                |

@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.1.0
+
+- Add experimental namespace-guess snippet
+- Provide csproj snippet when using msbuild language mode added by MSBuild project tools extension
+
 ## 1.0.2
 
 - Move final cursor position in MVC Action snippet above return statement

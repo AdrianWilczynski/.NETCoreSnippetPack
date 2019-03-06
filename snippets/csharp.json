@@ -33,6 +33,13 @@
             "}"
         ]
     },
+    "Guess Namespace": {
+        "prefix": "namespace-guess",
+        "body": [
+            "${TM_DIRECTORY/(.*[\\\\\\/](repos|src|test|desktop|projects)[\\\\\\/])|(^([a-z]:)?[\\\\\\/])|([\\\\\\/])|([ -])/${5:+.}${6:+_}/gi}"
+        ],
+        "description": "Tries to guess namespace based on directory structure.\n\nFor it to work your project's root folder must be in one of the following directories:\n- repos,\n- src,\n- test,\n- projects,\n- desktop.\n\nFolder name matching is case insensitive."
+    },
     "MVC Controller": {
         "prefix": "asp-mvc-controller",
         "body": [
