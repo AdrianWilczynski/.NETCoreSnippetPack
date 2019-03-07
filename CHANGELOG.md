@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.3.0
+
+- Add snippets for C# scripting with dotnet-script
+
 ## 1.2.2
 
 - Add tab stop for arguments in MVC Action snippet

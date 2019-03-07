@@ -197,5 +197,17 @@
             "\t}",
             "}"
         ]
+    },
+    "NuGet Package Reference": {
+        "prefix": "ds-nuget-reference",
+        "body": [
+            "#r \"nuget: ${1:PackageName}, ${2:Version}\""
+        ]
+    },
+    "Script Reference": {
+        "prefix": "ds-script-load",
+        "body": [
+            "#load \"${1:scriptFile.csx}\""
+        ]
     }
 }

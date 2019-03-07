@@ -11,7 +11,7 @@
 | _                               | Underscored field name based on preceding type**                       |
 
 \* For namespace guessing to work your project's root folder must be in one of the following directories: repos, src, test, projects, desktop. Folder name matching is case insensitive.\
-\*\* It's not going to work for any "crazy" type like tuple or class nested inside other generic class.
+\*\* It's not going to work for any "crazy" types like tuple or class nested inside some other, generic class.
 
 ### ASP.NET Core
 | Prefix                          | Renders                                                                |
@@ -26,6 +26,12 @@
 | Prefix                          | Renders                                                                |
 | ------------------------------- | ---------------------------------------------------------------------- |
 | ef-db-context                   | DbContext                                                              |
+
+### dotnet-script
+| Prefix                          | Renders                                                                |
+| ------------------------------- | ---------------------------------------------------------------------- |
+| ds-nuget-reference              | NuGet Package Reference                                                |
+| ds-script-load                  | Script Reference                                                       |
 
 
 ## Razor (aspnetcorerazor, razor) 
