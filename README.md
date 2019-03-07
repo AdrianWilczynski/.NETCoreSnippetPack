@@ -1,13 +1,17 @@
 # ASP.NET Core Snippet Pack
 
-## C\#
+## C\# (csharp)
 | Prefix                          | Renders                                                                |
 | ------------------------------- | ---------------------------------------------------------------------- |
 | class-namespace                 | Class and Namespace with some common Usings                            |
 | interface-namespace             | Interface and Namespace with some common Usings                        |
 | namespace-guess                 | Namespace based on directory structure*                                |
+| method                          | Method                                                                 |
+| field                           | Field                                                                  |
+| _                               | Underscored field name based on preceding type**                       |
 
 \* For namespace guessing to work your project's root folder must be in one of the following directories: repos, src, test, projects, desktop. Folder name matching is case insensitive.
+\*\* It's not going to work for any "crazy" type like tuple or class nested inside other generic class 
 
 ### ASP.NET Core
 | Prefix                          | Renders                                                                |
@@ -29,6 +33,8 @@
 | ------------------------------- | ---------------------------------------------------------------------- |
 | asp-view                        | View Template                                                          |
 | asp-razor-page                  | Page Template                                                          |
+| asp-form-group                  | Form Group - input field, label and validation span                    |
+| asp-form-group-bootstrap        | Form Group with Bootstrap's classes                                    |
 
 ### Tag Helpers
 | Prefix                          | Renders                                                                |
@@ -52,7 +58,7 @@
 | asp-cache                       | Cache Tag Helper                                                       |
 | asp-environment                 | Environment Tag Helper                                                 |
 
-## csproj (xml) 
+## csproj (xml, msbuild) 
 | Prefix                           | Renders                                                               |
 | -------------------------------- | --------------------------------------------------------------------- |
 | csproj-user-secrets              | UserSecretsId Element                                                 |

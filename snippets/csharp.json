@@ -40,6 +40,28 @@
         ],
         "description": "Tries to guess namespace based on directory structure.\n\nFor it to work your project's root folder must be in one of the following directories:\n- repos,\n- src,\n- test,\n- projects,\n- desktop.\n\nFolder name matching is case insensitive."
     },
+    "Method": {
+        "prefix": "method",
+        "body": [
+            "${1:public} ${2:void} ${3:MethodName}($4)",
+            "{",
+            "\t$0",
+            "}"
+        ]
+    },
+    "Field": {
+        "prefix": "field",
+        "body": [
+            "private ${1:readonly} ${2:Type} ${3:_name};"
+        ]
+    },
+    "Underscored Field Name": {
+        "prefix": "_",
+        "body": [
+            "_${TM_CURRENT_LINE/[^<]*[ .]I?([A-Z]|(?<!I)[a-z_])([^ <]*)[ <].*/${1:/downcase}$2/}"
+        ],
+        "description": "Tries to guess underscored field name based on preceding type."
+    },
     "MVC Controller": {
         "prefix": "asp-mvc-controller",
         "body": [

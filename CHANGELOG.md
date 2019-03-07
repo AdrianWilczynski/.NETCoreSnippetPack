@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.2.0
+
+- Add method and field snippets for C#
+- Add new experimental snippet that attempts to guess underscored field name based on preceding type
+- Add Form Group snippets for Razor
+
 ## 1.1.0
 
 - Add experimental namespace-guess snippet

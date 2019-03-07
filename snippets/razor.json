@@ -127,5 +127,25 @@
             "}",
             "$0"
         ]
+    },
+    "Form Group": {
+        "prefix": "asp-form-group",
+        "body": [
+            "<div>",
+            "\t<label asp-for=\"${1:ModelProperty}\"></label>",
+            "\t<input asp-for=\"${1}\" />",
+            "\t<span asp-validation-for=\"${1}\"></span>",
+            "</div>"
+        ]
+    },
+    "Form Group with Bootstrap classes": {
+        "prefix": "asp-form-group-bootstrap",
+        "body": [
+            "<div class=\"form-group\">",
+            "\t<label asp-for=\"${1:ModelProperty}\"></label>",
+            "\t<input asp-for=\"${1}\" class=\"form-control\" />",
+            "\t<span asp-validation-for=\"${1}\" class=\"text-danger\"></span>",
+            "</div>"
+        ]
     }
 }
