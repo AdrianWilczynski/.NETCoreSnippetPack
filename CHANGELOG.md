@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.2.2
+
+- Add tab stop for arguments in MVC Action snippet
+
 ## 1.2.1
 
 - README formatting

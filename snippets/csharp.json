@@ -173,7 +173,7 @@
     "MVC Action": {
         "prefix": "asp-action",
         "body": [
-            "public IActionResult ${1:ActionName}()",
+            "public IActionResult ${1:ActionName}($2)",
             "{",
             "\t$0",
             "\treturn View();",
