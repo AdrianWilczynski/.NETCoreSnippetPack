@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.2.1
+
+- README formatting
+
 ## 1.2.0
 
 - Add method and field snippets for C#
