@@ -20,6 +20,7 @@
 | asp-api-controller              | API Controller                                                         |
 | asp-page-model                  | Razor Page Model                                                       |
 | asp-view-component              | View Component Class                                                   |
+| asp-action-filter               | Action Filter                                                          |
 | asp-action                      | MVC Action                                                             |
 
 ### Entity Framework Core

@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.5.0
+
+- Add Action Filter snippet
+
 ## 1.4.1
 
 - Define final cursor position in more snippets
