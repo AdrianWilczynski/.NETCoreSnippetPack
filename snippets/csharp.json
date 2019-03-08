@@ -75,8 +75,9 @@
             "{",
             "\tpublic class ${TM_FILENAME_BASE} : Controller",
             "\t{",
-            "\t\tpublic IActionResult Index()",
+            "\t\tpublic IActionResult ${2:Index}()",
             "\t\t{",
+            "\t\t\t$0",
             "\t\t\treturn View();",
             "\t\t}",
             "\t}",
@@ -144,6 +145,7 @@
             "\t{",
             "\t\tpublic void OnGet()",
             "\t\t{",
+            "\t\t\t$0",
             "\t\t}",
             "\t}",
             "}"
@@ -164,6 +166,7 @@
             "\t{",
             "\t\tpublic IViewComponentResult Invoke()",
             "\t\t{",
+            "\t\t\t$0",
             "\t\t\treturn View();",
             "\t\t}",
             "\t}",
@@ -194,6 +197,7 @@
             "\tpublic class ${TM_FILENAME_BASE} : DbContext",
             "\t{",
             "\t\tpublic ${TM_FILENAME_BASE}(DbContextOptions<${TM_FILENAME_BASE}> options) : base(options) { }",
+            "\t\t$0",
             "\t}",
             "}"
         ]

@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.4.1
+
+- Define final cursor position in more snippets
+
 ## 1.4.0
 
 - Add couple of basic snippets for AutoMapper
