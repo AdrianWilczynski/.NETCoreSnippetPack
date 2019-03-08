@@ -198,6 +198,44 @@
             "}"
         ]
     },
+    "AutoMapper Profile": {
+        "prefix": "am-profile",
+        "body": [
+            "using AutoMapper;",
+            "",
+            "namespace ${1:Namespace}",
+            "{",
+            "\tpublic class ${TM_FILENAME_BASE} : Profile",
+            "\t{",
+            "\t\tpublic ${TM_FILENAME_BASE}()",
+            "\t\t{",
+            "\t\t\tCreateMap<${2:SourceType}, ${3:DestinationType}>();$0",
+            "\t\t}",
+            "\t}",
+            "}"
+        ]
+    },
+    "AutoMapper Type Converter": {
+        "prefix": "am-type-converter",
+        "body": [
+            "using System;",
+            "using System.Collections.Generic;",
+            "using System.Linq;",
+            "using System.Threading.Tasks;",
+            "using AutoMapper;",
+            "",
+            "namespace ${1:Namespace}",
+            "{",
+            "\tpublic class ${TM_FILENAME_BASE} : ITypeConverter<${2:SourceType}, ${3:DestinationType}>",
+            "\t{",
+            "\t\tpublic $3 Convert($2 source, $3 destination, ResolutionContext context)",
+            "\t\t{",
+            "\t\t\t$0",
+            "\t\t}",
+            "\t}",
+            "}"
+        ]
+    },
     "NuGet Package Reference": {
         "prefix": "ds-nuget-reference",
         "body": [

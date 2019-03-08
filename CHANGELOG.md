@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.4.0
+
+- Add couple of basic snippets for AutoMapper
+
 ## 1.3.0
 
 - Add snippets for C# scripting with dotnet-script
