@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.6.0
+
+- Expose TM_FILENAME_BASE variable in a separate snippet
+- Add xUnit snippets: xu-class, xu-fact
+
 ## 1.5.0
 
 - Add Action Filter snippet

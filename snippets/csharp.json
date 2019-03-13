@@ -62,6 +62,10 @@
         ],
         "description": "Tries to guess underscored field name based on preceding type."
     },
+    "Filename Base": {
+        "prefix": "filename-base",
+        "body": "${TM_FILENAME_BASE}"
+    },
     "MVC Controller": {
         "prefix": "asp-mvc-controller",
         "body": [
@@ -263,6 +267,38 @@
             "\t\t\t$0",
             "\t\t}",
             "\t}",
+            "}"
+        ]
+    },
+    "xUnit Test Class": {
+        "prefix": "xu-class",
+        "body": [
+            "using System;",
+            "using System.Collections.Generic;",
+            "using System.Linq;",
+            "using System.Threading.Tasks;",
+            "using Xunit;",
+            "",
+            "namespace ${1:Namespace}",
+            "{",
+            "\tpublic class ${TM_FILENAME_BASE}",
+            "\t{",
+            "\t\t[Fact]",
+            "\t\tpublic void ${2:TestName}()",
+            "\t\t{",
+            "\t\t\t$0",
+            "\t\t}",
+            "\t}",
+            "}"
+        ]
+    },
+    "xUnit Fact": {
+        "prefix": "xu-fact",
+        "body": [
+            "[Fact]",
+            "public void ${1:TestName}()",
+            "{",
+            "\t$0",
             "}"
         ]
     },

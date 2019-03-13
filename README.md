@@ -9,6 +9,7 @@
 | method                          | Method                                                                 |
 | field                           | Field                                                                  |
 | _                               | Underscored field name based on preceding type**                       |
+| filename-base                   | Filename without extension                                             |
 
 \* For namespace guessing to work your project's root folder must be in one of the following directories: repos, src, test, projects, desktop. Folder name matching is case insensitive.\
 \*\* It's not going to work for any "crazy" types like tuple or class nested inside some other, generic class.
@@ -33,6 +34,12 @@
 | ------------------------------- | ---------------------------------------------------------------------- |
 | am-profile                      | Profile                                                                |
 | am-type-converter               | Type Converter                                                         |
+
+### xUnit
+| Prefix                          | Renders                                                                |
+| ------------------------------- | ---------------------------------------------------------------------- |
+| xu-class                        | Test Class                                                             |
+| xu-fact                         | Fact Method                                                            |
 
 ### dotnet-script
 | Prefix                          | Renders                                                                |
