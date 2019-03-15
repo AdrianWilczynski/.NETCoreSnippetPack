@@ -53,6 +53,9 @@
 | ------------------------------- | ---------------------------------------------------------------------- |
 | asp-view                        | View Template                                                          |
 | asp-razor-page                  | Page Template                                                          |
+| asp-layout                      | _Layout Template                                                       |
+| asp-view-start                  | _ViewStart Template                                                    |
+| asp-view-imports                | _ViewImports Template                                                  |
 | asp-form-group                  | Form Group - input field, label and validation span                    |
 | asp-form-group-bootstrap        | Form Group with Bootstrap's classes                                    |
 

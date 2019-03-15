@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.7.0
+
+- Add _Layout, _ViewStart and _ViewImports snippets
+
 ## 1.6.0
 
 - Expose TM_FILENAME_BASE variable in a separate snippet

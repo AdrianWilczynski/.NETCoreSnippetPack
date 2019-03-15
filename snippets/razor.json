@@ -128,6 +128,40 @@
             "$0"
         ]
     },
+    "Layout Template": {
+        "prefix": "asp-layout",
+        "body": [
+            "<!DOCTYPE html>",
+            "<html>",
+            "<head>",
+            "\t<meta charset=\"utf-8\" />",
+            "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />",
+            "\t<title>@ViewData[\"Title\"] - ${1:Title}</title>",
+            "</head>",
+            "<body>",
+            "\t<main>",
+            "\t\t@RenderBody()",
+            "\t</main>",
+            "",
+            "\t@RenderSection(\"Scripts\", required: false)",
+            "</body>",
+            "</html>"
+        ]
+    },
+    "View Imports Template": {
+        "prefix": "asp-view-imports",
+        "body": [
+            "@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers"
+        ]
+    },
+    "View Start Template": {
+        "prefix": "asp-view-start",
+        "body": [
+            "@{",
+            "\tLayout = \"_Layout\";",
+            "}"
+        ]
+    },
     "Form Group": {
         "prefix": "asp-form-group",
         "body": [
