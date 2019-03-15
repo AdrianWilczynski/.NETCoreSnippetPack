@@ -80,7 +80,7 @@
 | asp-antiforgery                 | asp-antiforgery Tag Helper                                             |
 | asp-host                        | asp-host Tag Helper                                                    |
 | asp-src-include                 | asp-src-include Tag Helper                                             |
-| asp-src-exclude                 | asp-src-exclude                                                        |
+| asp-src-exclude                 | asp-src-exclude Tag Helper                                             |
 | asp-partial                     | Partial View Tag Helper                                                |
 | asp-view-component              | View Component Tag Helper                                              |
 | asp-cache                       | Cache Tag Helper                                                       |
