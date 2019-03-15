@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.8.0
+
+- Add some of the missing tag Tag Helpers
+
 ## 1.7.0
 
 - Add _Layout, _ViewStart and _ViewImports snippets

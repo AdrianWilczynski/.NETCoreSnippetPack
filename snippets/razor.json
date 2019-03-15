@@ -83,6 +83,36 @@
             "asp-items=\"${1:SelectList}\""
         ]
     },
+    "asp-append-version Tag Helper": {
+        "prefix": "asp-append-version",
+        "body": [
+            "asp-append-version=\"true\""
+        ]
+    },
+    "asp-antiforgery Tag Helper": {
+        "prefix": "asp-antiforgery",
+        "body": [
+            "asp-antiforgery=\"${1|true,false|}\""
+        ]
+    },
+    "asp-host Tag Helper": {
+        "prefix": "asp-host",
+        "body": [
+            "asp-host=\"${1:microsoft.com}\""
+        ]
+    },
+    "asp-src-include Tag Helper": {
+        "prefix": "asp-src-include",
+        "body": [
+            "asp-src-include=\"${1:~/js/**/*.js}\""
+        ]
+    },
+    "asp-src-exclude Tag Helper": {
+        "prefix": "asp-src-exclude",
+        "body": [
+            "asp-src-exclude=\"${1:~/js/excluded/**/*.js}\""
+        ]
+    },
     "Partial View Tag Helper": {
         "prefix": "asp-partial",
         "body": [

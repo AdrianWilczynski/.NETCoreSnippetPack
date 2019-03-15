@@ -76,6 +76,11 @@
 | asp-fragment                    | asp-fragment Tag Helper                                                |
 | asp-protocol                    | asp-protocol Tag Helper                                                |
 | asp-items                       | asp-items Tag Helper                                                   |
+| asp-append-version              | asp-append-version Tag Helper                                          |
+| asp-antiforgery                 | asp-antiforgery Tag Helper                                             |
+| asp-host                        | asp-host Tag Helper                                                    |
+| asp-src-include                 | asp-src-include Tag Helper                                             |
+| asp-src-exclude                 | asp-src-exclude                                                        |
 | asp-partial                     | Partial View Tag Helper                                                |
 | asp-view-component              | View Component Tag Helper                                              |
 | asp-cache                       | Cache Tag Helper                                                       |
