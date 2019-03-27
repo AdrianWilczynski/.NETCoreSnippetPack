@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.9.0
+
+- Add new supported directory to namespace snippet
+- Improve illegal namespace character matching
+
 ## 1.8.0
 
 - Add some of the missing tag Tag Helpers

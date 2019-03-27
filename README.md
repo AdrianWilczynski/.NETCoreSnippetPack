@@ -11,7 +11,7 @@
 | _                               | Underscored field name based on preceding type**                       |
 | filename-base                   | Filename without extension                                             |
 
-\* For namespace guessing to work your project's root folder must be in one of the following directories: repos, src, test, projects, desktop. Folder name matching is case insensitive.\
+\* For namespace guessing to work your project's root folder must be in one of the following directories: repos, src, test, tests, projects, desktop. Folder name matching is case insensitive.\
 \*\* It's not going to work for any "crazy" types like tuple or class nested inside some other, generic class.
 
 ### ASP.NET Core
