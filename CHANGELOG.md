@@ -7,7 +7,7 @@
 
 ## 1.8.0
 
-- Add some of the missing tag Tag Helpers
+- Add some of the missing Tag Helpers
 
 ## 1.7.0
 
