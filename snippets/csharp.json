@@ -38,7 +38,7 @@
         "body": [
             "${TM_DIRECTORY/(.*[\\\\\\/](repos|src|test|tests|desktop|projects)[\\\\\\/])|(^([a-z]:)?[\\\\\\/])|([\\\\\\/])|([^\\w.])/${5:+.}${6:+_}/gi}"
         ],
-        "description": "Tries to guess namespace based on directory structure.\n\nFor it to work your project's root folder must be in one of the following directories:\n- repos,\n- src,\n- test,\n- tests,\n- projects,\n- desktop.\n\nFolder name matching is case insensitive."
+        "description": "Namespace based on directory structure.\n\nFor it to work your project's root folder must be in one of the following directories:\n- repos,\n- src,\n- test,\n- tests,\n- projects,\n- desktop.\n\nFolder name matching is case insensitive."
     },
     "Method": {
         "prefix": "method",
@@ -58,9 +58,9 @@
     "Underscored Field Name": {
         "prefix": "_",
         "body": [
-            "_${TM_CURRENT_LINE/[^<]*[ .]I?([A-Z]|(?<!I)[a-z_])([^ <]*)[ <].*/${1:/downcase}$2/}"
+            "${TM_CURRENT_LINE/(^ *((public|private|protected|internal|new|volatile|unsafe|static|readonly) +)*(?!(abstract|as|base|break|case|catch|checked|class|const|continue|default|delegate|do|else|enum|event|explicit|extern|false|finally|fixed|for|foreach|goto|if|implicit|in|interface|internal|is|lock|namespace|new|null|operator|out|override|params|private|protected|public|readonly|ref|return|sealed|sizeof|stackalloc|static|struct|switch|this|throw|true|try|typeof|unchecked|unsafe|using|virtual|void|volatile|while|add|alias|ascending|async|await|by|descending|dynamic|equals|from|get|global|group|into|join|let|nameof|on|orderby|partial|remove|select|set|value|var|when|where|yield)[^\\w])(\\w+(<[\\w ,.<>[\\]]+>)?\\.)*I?([A-Z]|(?<!I)[a-z_])(\\w*)(<[\\w ,.<>[\\]]+>)?(\\[[ ,]*])*\\s+_?\\s*;?\\s*$)|(.*)/${8:+_}${7:/downcase}$8/g}"
         ],
-        "description": "Tries to guess underscored field name based on preceding type."
+        "description": "Underscored field name based on preceding type."
     },
     "Filename Base": {
         "prefix": "filename-base",

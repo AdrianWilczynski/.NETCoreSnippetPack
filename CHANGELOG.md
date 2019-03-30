@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.10.0
+
+- Improve (hopefully 😅) underscored filed name snippet with some really, really nasty regex
+
 ## 1.9.0
 
 - Add new supported directory to namespace snippet
