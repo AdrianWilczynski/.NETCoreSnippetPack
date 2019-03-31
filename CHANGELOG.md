@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.10.3
+
+- Support tab as whitespace character in underscored field name snippet
+
 ## 1.10.0
 
 - Improve (hopefully 😅) underscored field name snippet with some really, really nasty regex
