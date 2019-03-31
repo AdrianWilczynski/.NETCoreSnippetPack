@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.10.4
+
+- Fix the bug with one character long names not being prefixed with an underscore
+
 ## 1.10.3
 
 - Support tab as whitespace character in underscored field name snippet
