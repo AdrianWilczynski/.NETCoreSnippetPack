@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.10.5
+
+- Minor fix for underscored name snippet
+
 ## 1.10.4
 
 - Fix the bug with one character long names not being prefixed with an underscore
