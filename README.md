@@ -89,6 +89,7 @@
 | Prefix                           | Renders                                                               |
 | -------------------------------- | --------------------------------------------------------------------- |
 | csproj-user-secrets              | UserSecretsId Element                                                 |
+| csproj-ruleset                   | CodeAnalysisRuleSet Element                                           |
 
 
 ## appsettings (json) 
@@ -96,3 +97,10 @@
 | --------------------------------| ---------------------------------------------------------------------- |
 | as-mssql-connection-string      | MS SQL LocalDB Connection String                                       |
 | as-sqlite-connection-string     | SQLite Connection String                                               |
+
+## ruleset (plaintext) 
+
+### Roslynator
+| Prefix                          | Renders                                                                |
+| --------------------------------| ---------------------------------------------------------------------- |
+| roslynator-ruleset              | Rules for ASP.NET Core (disable RCS1090: Call 'ConfigureAwait(false)') |

@@ -46,6 +46,10 @@
             {
                 "language": "msbuild",
                 "path": "./snippets/csproj.json"
+            },
+            {
+                "language": "plaintext",
+                "path": "./snippets/ruleset.json"
             }
         ]
     }
