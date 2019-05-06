@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.11.0
+
+- Add ruleset snippets
+- Add CopyToPublishDirectory snippet
+
 ## 1.10.5
 
 - Minor fix for underscored name snippet

@@ -90,6 +90,7 @@
 | -------------------------------- | --------------------------------------------------------------------- |
 | csproj-user-secrets              | UserSecretsId Element                                                 |
 | csproj-ruleset                   | CodeAnalysisRuleSet Element                                           |
+| csproj-copy-to-publish           | Content Element with CopyToPublishDirectory Attribute                 |
 
 
 ## appsettings (json) 

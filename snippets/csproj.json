@@ -10,5 +10,11 @@
         "body": [
             "<CodeAnalysisRuleSet>${1:global.ruleset}</CodeAnalysisRuleSet>"
         ]
+    },
+    "Content to CopyToPublishDirectory": {
+        "prefix": "csproj-copy-to-publish",
+        "body": [
+            "<Content Include=\"${1:files\\**\\*}\" CopyToPublishDirectory=\"${2|PreserveNewest,Always,Never|}\" />"
+        ]
     }
 }
