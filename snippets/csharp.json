@@ -71,7 +71,7 @@
 		"description": "Underscored name based on preceding type."
 	},
 	"Filename Base": {
-		"prefix": "filename-base",
+		"prefix": "filename",
 		"body": "${TM_FILENAME_BASE}"
 	},
 	"MVC Controller": {

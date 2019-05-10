@@ -11,7 +11,7 @@
 | _                               | Underscored name based on preceding type                               |
 | c                               | CamelCased name based on preceding type                                |
 | p                               | PascalCased name based on preceding type                               |
-| filename-base                   | Filename without extension                                             |
+| filename                        | Filename without extension                                             |
 
 \* For namespace guessing to work your project's root folder must be in one of the following directories: repos, src, test, tests, projects, desktop. Folder name matching is case insensitive.
 
