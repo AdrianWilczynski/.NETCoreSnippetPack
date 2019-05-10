@@ -57,17 +57,17 @@
 	},
 	"CamelCase Name": {
 		"prefix": "c",
-		"body": "${TM_CURRENT_LINE/(^(([^<>]|<.*>)*[ \\t(,])?(\\w+(<[\\w \\t,.<>[\\]()]+>)?\\.)*I?([A-Z]|(?<!I)[a-z_])(\\w*)(<[\\w \\t,.<>[\\]()]+>)?(\\[[ \\t,]*])*[ \\t]+c(?!\\w))|(.*)/${6:/downcase}$7/g}",
+		"body": "${TM_CURRENT_LINE/(^(([^<>]|<.*>|=>)*[ \\t(,])?(\\w+(<[\\w \\t,.<>[\\]()]+>)?\\.)*I?([A-Z]|(?<!I)[a-z_])(\\w*)(<[\\w \\t,.<>[\\]()]+>)?(\\[[ \\t,]*])*[ \\t]+c(?!\\w))|(.*)/${6:/downcase}$7/g}",
 		"description": "CamelCased name based on preceding type."
 	},
 	"PascalCase Name": {
 		"prefix": "p",
-		"body": "${TM_CURRENT_LINE/(^(([^<>]|<.*>)*[ \\t(,])?(\\w+(<[\\w \\t,.<>[\\]()]+>)?\\.)*I?([A-Z]|(?<!I)[a-z_])(\\w*)(<[\\w \\t,.<>[\\]()]+>)?(\\[[ \\t,]*])*[ \\t]+p(?!\\w))|(.*)/${6:/upcase}$7/g}",
+		"body": "${TM_CURRENT_LINE/(^(([^<>]|<.*>|=>)*[ \\t(,])?(\\w+(<[\\w \\t,.<>[\\]()]+>)?\\.)*I?([A-Z]|(?<!I)[a-z_])(\\w*)(<[\\w \\t,.<>[\\]()]+>)?(\\[[ \\t,]*])*[ \\t]+p(?!\\w))|(.*)/${6:/upcase}$7/g}",
 		"description": "PascalCased name based on preceding type."
 	},
 	"Underscored Name": {
 		"prefix": "_",
-		"body": "${TM_CURRENT_LINE/(^(([^<>]|<.*>)*[ \\t(,])?(\\w+(<[\\w \\t,.<>[\\]()]+>)?\\.)*I?([A-Z]|(?<!I)[a-z_])(\\w*)(<[\\w \\t,.<>[\\]()]+>)?(\\[[ \\t,]*])*[ \\t]+_(?!\\w))|(.*)/${6:+_}${6:/downcase}$7/g}",
+		"body": "${TM_CURRENT_LINE/(^(([^<>]|<.*>|=>)*[ \\t(,])?(\\w+(<[\\w \\t,.<>[\\]()]+>)?\\.)*I?([A-Z]|(?<!I)[a-z_])(\\w*)(<[\\w \\t,.<>[\\]()]+>)?(\\[[ \\t,]*])*[ \\t]+_(?!\\w))|(.*)/${6:+_}${6:/downcase}$7/g}",
 		"description": "Underscored name based on preceding type."
 	},
 	"Filename Base": {
