@@ -55,12 +55,20 @@
 			"private ${1:readonly} ${2:Type} ${3:_name};"
 		]
 	},
-	"Underscored Field Name": {
+	"CamelCase Name": {
+		"prefix": "c",
+		"body": "${TM_CURRENT_LINE/(^(([^<>]|<.*>)*[ \\t(,])?(\\w+(<[\\w \\t,.<>[\\]()]+>)?\\.)*I?([A-Z]|(?<!I)[a-z_])(\\w*)(<[\\w \\t,.<>[\\]()]+>)?(\\[[ \\t,]*])*[ \\t]+c(?!\\w))|(.*)/${6:/downcase}$7/g}",
+		"description": "CamelCased name based on preceding type."
+	},
+	"PascalCase Name": {
+		"prefix": "p",
+		"body": "${TM_CURRENT_LINE/(^(([^<>]|<.*>)*[ \\t(,])?(\\w+(<[\\w \\t,.<>[\\]()]+>)?\\.)*I?([A-Z]|(?<!I)[a-z_])(\\w*)(<[\\w \\t,.<>[\\]()]+>)?(\\[[ \\t,]*])*[ \\t]+p(?!\\w))|(.*)/${6:/upcase}$7/g}",
+		"description": "PascalCased name based on preceding type."
+	},
+	"Underscored Name": {
 		"prefix": "_",
-		"body": [
-			"${TM_CURRENT_LINE/(^[ \\t]*((public|private|protected|internal|new|volatile|unsafe|static|readonly)[ \\t]+)*(?!(abstract|as|base|break|case|catch|checked|class|const|continue|default|delegate|do|else|enum|event|explicit|extern|false|finally|fixed|for|foreach|goto|if|implicit|in|interface|internal|is|lock|namespace|new|null|operator|out|override|params|private|protected|public|readonly|ref|return|sealed|sizeof|stackalloc|static|struct|switch|this|throw|true|try|typeof|unchecked|unsafe|using|virtual|void|volatile|while|add|alias|ascending|async|await|by|descending|dynamic|equals|from|get|global|group|into|join|let|nameof|on|orderby|partial|remove|select|set|value|var|when|where|yield)[^\\w])(\\w+(<[\\w \\t,.<>[\\]]+>)?\\.)*I?([A-Z]|(?<!I)[a-z_])(\\w*)(<[\\w \\t,.<>[\\]]+>)?(\\[[ \\t,]*])*[ \\t]+_?[ \\t]*(=.*)?;?[ \\t]*$)|(.*)/${7:+_}${7:/downcase}$8/g}"
-		],
-		"description": "Underscored field name based on preceding type."
+		"body": "${TM_CURRENT_LINE/(^(([^<>]|<.*>)*[ \\t(,])?(\\w+(<[\\w \\t,.<>[\\]()]+>)?\\.)*I?([A-Z]|(?<!I)[a-z_])(\\w*)(<[\\w \\t,.<>[\\]()]+>)?(\\[[ \\t,]*])*[ \\t]+_(?!\\w))|(.*)/${6:+_}${6:/downcase}$7/g}",
+		"description": "Underscored name based on preceding type."
 	},
 	"Filename Base": {
 		"prefix": "filename-base",

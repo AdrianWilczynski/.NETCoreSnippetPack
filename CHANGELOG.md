@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.12.0
+
+- Add PascalCase name ad CamelCase name snippets
+- Make underscored name snippet more generic
+
 ## 1.11.0
 
 - Add ruleset snippets

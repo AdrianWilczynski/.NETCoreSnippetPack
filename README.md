@@ -8,7 +8,9 @@
 | namespace-guess                 | Namespace based on directory structure*                                |
 | method                          | Method                                                                 |
 | field                           | Field                                                                  |
-| _                               | Underscored field name based on preceding type                         |
+| _                               | Underscored name based on preceding type                               |
+| c                               | CamelCased name based on preceding type                                |
+| p                               | PascalCased name based on preceding type                               |
 | filename-base                   | Filename without extension                                             |
 
 \* For namespace guessing to work your project's root folder must be in one of the following directories: repos, src, test, tests, projects, desktop. Folder name matching is case insensitive.
