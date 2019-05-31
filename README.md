@@ -48,6 +48,11 @@
 | ds-nuget-reference              | NuGet Package Reference                                                |
 | ds-script-load                  | Script Reference                                                       |
 
+### Roslynator
+| Prefix                          | Renders                                                                |
+| --------------------------------| ---------------------------------------------------------------------- |
+| roslynator-csx-warning-disable  | #pragma warning disable RCS1018, RCS1110 (useless in scripts)          |
+
 
 ## Razor (aspnetcorerazor, razor) 
 | Prefix                          | Renders                                                                |

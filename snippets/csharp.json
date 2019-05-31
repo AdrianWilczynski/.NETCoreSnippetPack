@@ -243,6 +243,10 @@
 	"AutoMapper Profile": {
 		"prefix": "am-profile",
 		"body": [
+			"using System;",
+			"using System.Collections.Generic;",
+			"using System.Linq;",
+			"using System.Threading.Tasks;",
 			"using AutoMapper;",
 			"",
 			"namespace ${1:Namespace}",
@@ -320,6 +324,12 @@
 		"prefix": "ds-script-load",
 		"body": [
 			"#load \"${1:scriptFile.csx}\""
+		]
+	},
+	"Disable Roslynator warnings in .csx file": {
+		"prefix": "roslynator-csx-warning-disable",
+		"body": [
+			"#pragma warning disable RCS1018, RCS1110"
 		]
 	}
 }
