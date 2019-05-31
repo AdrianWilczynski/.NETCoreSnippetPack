@@ -16,14 +16,19 @@
 \* For namespace guessing to work your project's root folder must be in one of the following directories: repos, src, test, tests, projects, desktop. Folder name matching is case insensitive.
 
 ### ASP.NET Core
-| Prefix                          | Renders                                                                |
-| ------------------------------- | ---------------------------------------------------------------------- |
-| asp-mvc-controller              | MVC Controller                                                         |
-| asp-api-controller              | API Controller                                                         |
-| asp-page-model                  | Razor Page Model                                                       |
-| asp-view-component              | View Component Class                                                   |
-| asp-action-filter               | Action Filter                                                          |
-| asp-action                      | MVC Action                                                             |
+| Prefix                            | Renders                                                              |
+| ----------------------------------| ---------------------------------------------------------------------|
+| asp-mvc-controller                | MVC Controller                                                       |
+| asp-api-controller                | API Controller                                                       |
+| asp-page-model                    | Razor Page Model                                                     |
+| asp-view-component                | View Component Class                                                 |
+| asp-action-filter                 | Action Filter                                                        |
+| asp-action(-async)                | MVC Action                                                           |
+| asp-action-get(-async)            | API Action GET                                                       |
+| asp-action-get-enumerable(-async) | API Action GET Enumerable                                            |
+| asp-action-post(-async)           | API Action POST                                                      |
+| asp-action-put(-async)            | API Action PUT                                                       |
+| asp-action-delete(-async)         | API Action DELETE                                                    |
 
 ### Entity Framework Core
 | Prefix                          | Renders                                                                |

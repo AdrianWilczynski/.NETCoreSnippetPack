@@ -221,6 +221,116 @@
 			"}"
 		]
 	},
+	"MVC Action Async": {
+		"prefix": "asp-action-async",
+		"body": [
+			"public async Task<IActionResult> ${1:ActionName}($2)",
+			"{",
+			"\t$0",
+			"\treturn View();",
+			"}"
+		]
+	},
+	"API Action GET": {
+		"prefix": "asp-action-get",
+		"body": [
+			"[HttpGet(\"${1:{id\\}}\")]",
+			"public ActionResult<${2:string}> ${3:Get}(${4:int} ${5:id})",
+			"{",
+			"\t$0",
+			"}"
+		]
+	},
+	"API Action GET Async": {
+		"prefix": "asp-action-get-async",
+		"body": [
+			"[HttpGet(\"${1:{id\\}}\")]",
+			"public async Task<ActionResult<${2:string}>> ${3:GetAsync}(${4:int} ${5:id})",
+			"{",
+			"\t$0",
+			"}"
+		]
+	},
+	"API Action GET Enumerable": {
+		"prefix": "asp-action-get-enumerable",
+		"body": [
+			"[HttpGet]",
+			"public ActionResult<IEnumerable<${1:string}>> ${2:Get}()",
+			"{",
+			"\t$0",
+			"}"
+		]
+	},
+	"API Action GET Enumerable Async": {
+		"prefix": "asp-action-get-enumerable-async",
+		"body": [
+			"[HttpGet]",
+			"public async Task<ActionResult<IEnumerable<${1:string}>>> ${2:GetAsync}()",
+			"{",
+			"\t$0",
+			"}"
+		]
+	},
+	"API Action POST": {
+		"prefix": "asp-action-post",
+		"body": [
+			"[HttpPost]",
+			"public void ${1:Post}([FromBody] ${2:string} ${3:value})",
+			"{",
+			"\t$0",
+			"}"
+		]
+	},
+	"API Action POST Async": {
+		"prefix": "asp-action-post-async",
+		"body": [
+			"[HttpPost]",
+			"public async Task ${1:PostAsync}([FromBody] ${2:string} ${3:value})",
+			"{",
+			"\t$0",
+			"}"
+		]
+	},
+	"API Action PUT": {
+		"prefix": "asp-action-put",
+		"body": [
+			"[HttpPut(\"${1:{id\\}}\")]",
+			"public void ${2:Put}(${3:int} ${4:id}, [FromBody] ${5:string} ${6:value})",
+			"{",
+			"\t$0",
+			"}"
+		]
+	},
+	"API Action PUT Async": {
+		"prefix": "asp-action-put-async",
+		"body": [
+			"[HttpPut(\"${1:{id\\}}\")]",
+			"public async Task ${2:PutAsync}(${3:int} ${4:id}, [FromBody] ${5:string} ${6:value})",
+			"{",
+			"\t$0",
+			"}"
+		]
+	},
+	"API Action DELETE": {
+		"prefix": "asp-action-delete",
+		"body": [
+			"[HttpDelete(\"${1:{id\\}}\")]",
+			"public void ${2:Delete}(${3:int} ${4:id})",
+			"{",
+			"\t$0",
+			"}"
+		]
+	},
+	"API Action DELETE Async": {
+		"prefix": "asp-action-delete-async",
+		"body": [
+			"[HttpDelete(\"${1:{id\\}}\")]",
+			"public async Task ${2:DeleteAsync}(${3:int} ${4:id})",
+			"{",
+			"\t$0",
+			"}"
+		]
+	},
 	"DbContext": {
 		"prefix": "ef-db-context",
 		"body": [
