@@ -1,5 +1,7 @@
 # ASP.NET Core Snippet Pack
 
+A snippet pack for .NET Core.
+
 ## C\# (csharp)
 | Prefix                          | Renders                                                                |
 | ------------------------------- | ---------------------------------------------------------------------- |

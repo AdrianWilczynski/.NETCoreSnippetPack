@@ -1,7 +1,7 @@
 {
     "name": "asp-net-core-snippet-pack",
-    "displayName": "ASP.NET Core Snippet Pack",
-    "description": "A snippet pack for ASP.NET Core.",
+    "displayName": ".NET Core Snippet Pack",
+    "description": "A snippet pack for .NET Core.",
     "publisher": "adrianwilczynski",
     "version": "1.14.0",
     "icon": "logo.png",
