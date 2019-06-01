@@ -1,4 +1,4 @@
-# ASP.NET Core Snippet Pack
+# .NET Core Snippet Pack
 
 A snippet pack for .NET Core.
 
