@@ -38,8 +38,8 @@ A snippet pack for .NET Core.
 ### Entity Framework Core
 | Prefix                          | Renders                                                                |
 | ------------------------------- | ---------------------------------------------------------------------- |
-| ef-context                      | DbContext                                                              |
-| ef-set                          | DbSet                                                                  |
+| ef-db-context                   | DbContext                                                              |
+| ef-db-set                       | DbSet                                                                  |
 | ef-on-model-creating            | OnModelCreating Method                                                 |
 
 ### AutoMapper

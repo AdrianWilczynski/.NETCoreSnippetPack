@@ -366,7 +366,7 @@
 		]
 	},
 	"DbContext": {
-		"prefix": "ef-context",
+		"prefix": "ef-db-context",
 		"body": [
 			"using System;",
 			"using System.Collections.Generic;",
@@ -385,7 +385,7 @@
 		]
 	},
 	"DbSet": {
-		"prefix": "ef-set",
+		"prefix": "ef-db-set",
 		"body": [
 			"public DbSet<${1:Entity}> ${2:Entities} { get; set; }"
 		]
