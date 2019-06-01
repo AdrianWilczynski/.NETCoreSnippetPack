@@ -17,7 +17,7 @@
 
 ### ASP.NET Core
 | Prefix                            | Renders                                                              |
-| ----------------------------------| ---------------------------------------------------------------------|
+| --------------------------------- | -------------------------------------------------------------------- |
 | asp-mvc-controller                | MVC Controller                                                       |
 | asp-api-controller                | API Controller                                                       |
 | asp-page-model                    | Razor Page Model                                                     |
@@ -29,11 +29,16 @@
 | asp-action-post(-async)           | API Action POST                                                      |
 | asp-action-put(-async)            | API Action PUT                                                       |
 | asp-action-delete(-async)         | API Action DELETE                                                    |
+| asp-page-handler(-async)          | Razor Page Handler                                                   |
+| asp-prop-bind                     | Property with BindProperty attribute                                 |
+| asp-model-state-guard             | ModelState Guard Clause                                              |
 
 ### Entity Framework Core
 | Prefix                          | Renders                                                                |
 | ------------------------------- | ---------------------------------------------------------------------- |
-| ef-db-context                   | DbContext                                                              |
+| ef-context                      | DbContext                                                              |
+| ef-set                          | DbSet                                                                  |
+| ef-on-model-creating            | OnModelCreating Method                                                 |
 
 ### AutoMapper
 | Prefix                          | Renders                                                                |
@@ -55,7 +60,7 @@
 
 ### Roslynator
 | Prefix                          | Renders                                                                |
-| --------------------------------| ---------------------------------------------------------------------- |
+| ------------------------------- | ---------------------------------------------------------------------- |
 | roslynator-csx-warning-disable  | #pragma warning disable RCS1018, RCS1110 (useless in scripts)          |
 
 

@@ -331,8 +331,42 @@
 			"}"
 		]
 	},
+	"Page Handler": {
+		"prefix": "asp-page-handler",
+		"body": [
+			"public ${1:void} On${2:Get}(${3})",
+			"{",
+			"\t$0",
+			"}"
+		]
+	},
+	"Page Handler Async": {
+		"prefix": "asp-page-handler-async",
+		"body": [
+			"public async ${1:Task} On${2:Get}Async(${3})",
+			"{",
+			"\t$0",
+			"}"
+		]
+	},
+	"Property with BindProperty attribute": {
+		"prefix": "asp-prop-bind",
+		"body": [
+			"[BindProperty]",
+			"public ${1:int} ${2:MyProperty} { get; set; }"
+		]
+	},
+	"ModelState Guard Clause": {
+		"prefix": "asp-model-state-guard",
+		"body": [
+			"if (!ModelState.IsValid)",
+			"{",
+			"\treturn ${1:View()};",
+			"}"
+		]
+	},
 	"DbContext": {
-		"prefix": "ef-db-context",
+		"prefix": "ef-context",
 		"body": [
 			"using System;",
 			"using System.Collections.Generic;",
@@ -347,6 +381,22 @@
 			"\t\tpublic ${TM_FILENAME_BASE}(DbContextOptions<${TM_FILENAME_BASE}> options) : base(options) { }",
 			"\t\t$0",
 			"\t}",
+			"}"
+		]
+	},
+	"DbSet": {
+		"prefix": "ef-set",
+		"body": [
+			"public DbSet<${1:Entity}> ${2:Entities} { get; set; }"
+		]
+	},
+	"OnModelCreating Method": {
+		"prefix": "ef-on-model-creating",
+		"body": [
+			"protected override void OnModelCreating(ModelBuilder builder)",
+			"{",
+			"\tbase.OnModelCreating(builder);",
+			"\t$0",
 			"}"
 		]
 	},
