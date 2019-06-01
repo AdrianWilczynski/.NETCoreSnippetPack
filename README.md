@@ -34,6 +34,7 @@ A snippet pack for .NET Core.
 | asp-page-handler(-async)          | Razor Page Handler                                                   |
 | asp-prop-bind                     | Property with BindProperty attribute                                 |
 | asp-model-state-guard             | ModelState Guard Clause                                              |
+| asp-add-db-context                | AddDbContext() Call                                                  |
 
 ### Entity Framework Core
 | Prefix                          | Renders                                                                |

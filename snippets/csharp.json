@@ -365,6 +365,13 @@
 			"}"
 		]
 	},
+	"Add DbContext": {
+		"prefix": "asp-add-db-context",
+		"body": [
+			"services.AddDbContext<${1:ApplicationDbContext}>(options =>",
+			"\toptions.${2:UseSqlServer}(Configuration.GetConnectionString(\"${3:DefaultConnection}\")));"
+		]
+	},
 	"DbContext": {
 		"prefix": "ef-db-context",
 		"body": [
