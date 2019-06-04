@@ -55,6 +55,15 @@
 			"private ${1:readonly} ${2:Type} ${3:_name};"
 		]
 	},
+	    "Foreach with index": {
+        "prefix": "foreach-index",
+        "body": [
+            "foreach (var (${1:value}, ${2:i}) in ${3:collection}.Select((${1}, ${2}) => (${1}, ${2})))",
+            "{",
+            "\t$0",
+            "}"
+        ]
+    },
 	"CamelCase Name": {
 		"prefix": "c",
 		"body": "${TM_CURRENT_LINE/(^(([^<>]|<.*>|=>)*[ \\t(,])?(\\w+(<[\\w \\t,.<>[\\]()]+>)?\\.)*I?([A-Z]|(?<!I)[a-z_])(\\w*)(<[\\w \\t,.<>[\\]()]+>)?(\\[[ \\t,]*])*[ \\t]+c(?!\\w))|(.*)/${6:/downcase}$7/g}",

@@ -10,6 +10,7 @@ A snippet pack for .NET Core.
 | namespace-guess                 | Namespace based on directory structure*                                |
 | method                          | Method                                                                 |
 | field                           | Field                                                                  |
+| foreach-index                   | Foreach with index                                                     |
 | _                               | Underscored name based on preceding type                               |
 | c                               | CamelCased name based on preceding type                                |
 | p                               | PascalCased name based on preceding type                               |
