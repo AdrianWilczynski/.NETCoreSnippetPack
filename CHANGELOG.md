@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.18.0
+
+- Add SignalR snippets
+
 ## 1.12.0
 
 - Add PascalCase name ad CamelCase name snippets

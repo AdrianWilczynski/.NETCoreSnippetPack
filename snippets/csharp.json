@@ -49,21 +49,30 @@
 			"}"
 		]
 	},
+	"Async Method": {
+		"prefix": "method-async",
+		"body": [
+			"${1:public} async ${2:Task} ${3:MethodName}${4:Async}($5)",
+			"{",
+			"\t$0",
+			"}"
+		]
+	},
 	"Field": {
 		"prefix": "field",
 		"body": [
 			"private ${1:readonly} ${2:Type} ${3:_name};"
 		]
 	},
-	    "Foreach with index": {
-        "prefix": "foreach-index",
-        "body": [
-            "foreach (var (${1:value}, ${2:i}) in ${3:collection}.Select((${1}, ${2}) => (${1}, ${2})))",
-            "{",
-            "\t$0",
-            "}"
-        ]
-    },
+	"Foreach with index": {
+		"prefix": "foreach-index",
+		"body": [
+			"foreach (var (${1:value}, ${2:i}) in ${3:collection}.Select((${1}, ${2}) => (${1}, ${2})))",
+			"{",
+			"\t$0",
+			"}"
+		]
+	},
 	"CamelCase Name": {
 		"prefix": "c",
 		"body": "${TM_CURRENT_LINE/(^(([^<>]|<.*>|=>)*[ \\t(,])?(\\w+(<[\\w \\t,.<>[\\]()]+>)?\\.)*I?([A-Z]|(?<!I)[a-z_])(\\w*)(<[\\w \\t,.<>[\\]()]+>)?(\\[[ \\t,]*])*[ \\t]+c(?!\\w))|(.*)/${6:/downcase}$7/g}",
@@ -506,6 +515,44 @@
 		"prefix": "roslynator-csx-warning-disable",
 		"body": [
 			"#pragma warning disable RCS1018, RCS1110"
+		]
+	},
+	"SignalR Hub": {
+		"prefix": "sr-hub",
+		"body": [
+			"using System;",
+			"using System.Collections.Generic;",
+			"using System.Linq;",
+			"using System.Threading.Tasks;",
+			"using Microsoft.AspNetCore.SignalR;",
+			"",
+			"namespace ${1:Namespace}",
+			"{",
+			"\tpublic class ${TM_FILENAME_BASE} : Hub",
+			"\t{",
+			"\t\t$0",
+			"\t}",
+			"}"
+		]
+	},
+	"OnConnectedAsync Method": {
+		"prefix": "sr-on-connected-async",
+		"body": [
+			"public override async Task OnConnectedAsync()",
+			"{",
+			"\t$0",
+			"\tawait base.OnConnectedAsync();",
+			"}"
+		]
+	},
+	"OnDisconnectedAsync Method": {
+		"prefix": "sr-on-disconnected-async",
+		"body": [
+			"public override async Task OnDisconnectedAsync(Exception exception)",
+			"{",
+			"\t$0",
+			"\tawait base.OnDisconnectedAsync(exception);",
+			"}"
 		]
 	}
 }

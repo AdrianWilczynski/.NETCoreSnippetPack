@@ -8,7 +8,7 @@ A snippet pack for .NET Core.
 | class-namespace                 | Class and Namespace with some common Usings                            |
 | interface-namespace             | Interface and Namespace with some common Usings                        |
 | namespace-guess                 | Namespace based on directory structure*                                |
-| method                          | Method                                                                 |
+| method(-async)                  | Method                                                                 |
 | field                           | Field                                                                  |
 | foreach-index                   | Foreach with index                                                     |
 | _                               | Underscored name based on preceding type                               |
@@ -43,6 +43,13 @@ A snippet pack for .NET Core.
 | ef-db-context                   | DbContext                                                              |
 | ef-db-set                       | DbSet                                                                  |
 | ef-on-model-creating            | OnModelCreating Method                                                 |
+
+### SignalR
+| Prefix                          | Renders                                                                |
+| ------------------------------- | ---------------------------------------------------------------------- |
+| sr-hub                          | Hub                                                                    |
+| sr-on-connected-async           | OnConnectedAsync Method                                                |
+| sr-on-disconnected-async        | OnDisconnectedAsync Method                                             |
 
 ### AutoMapper
 | Prefix                          | Renders                                                                |
