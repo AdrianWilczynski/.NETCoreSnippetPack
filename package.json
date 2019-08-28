@@ -3,7 +3,7 @@
     "displayName": ".NET Core Snippet Pack",
     "description": "A snippet pack for .NET Core.",
     "publisher": "adrianwilczynski",
-    "version": "1.20.0",
+    "version": "1.21.0",
     "icon": "logo.png",
     "engines": {
         "vscode": "^1.31.0"
