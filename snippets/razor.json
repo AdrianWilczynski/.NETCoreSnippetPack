@@ -211,5 +211,31 @@
             "\t<span asp-validation-for=\"${1}\" class=\"text-danger\"></span>",
             "</div>"
         ]
-    }
+    },
+    "If IsAuthenticated": {
+        "prefix": "asp-if-authenticated",
+        "body": [
+            "@if (User.Identity.IsAuthenticated)",
+            "{",
+            "\t$0",
+            "}"
+        ]
+    },
+    "Section": {
+        "prefix": "asp-section",
+        "body": [
+            "@section ${1:Scripts} {",
+            "\t$0",
+            "}"
+        ]
+    },
+    "Foreach": {
+		"prefix": "asp-foreach",
+		"body": [
+			"@foreach (var ${1:item} in ${2:collection})",
+			"{",
+			"\t$0",
+			"}"
+		]
+	}
 }
