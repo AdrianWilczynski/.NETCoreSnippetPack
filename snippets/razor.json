@@ -221,6 +221,15 @@
             "}"
         ]
     },
+    "If": {
+        "prefix": "asp-if",
+        "body": [
+            "@if (${1:true})",
+            "{",
+            "\t$0",
+            "}"
+        ]
+    },
     "Section": {
         "prefix": "asp-section",
         "body": [

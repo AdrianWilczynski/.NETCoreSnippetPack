@@ -85,6 +85,7 @@ A snippet pack for .NET Core.
 | asp-view-imports                | _ViewImports Template                                                  |
 | asp-form-group                  | Form Group - input field, label and validation span                    |
 | asp-form-group-bootstrap        | Form Group with Bootstrap's classes                                    |
+| asp-if                          | If statement                                                           |
 | asp-if-authenticated            | If IsAuthenticated statement                                           |
 | asp-section                     | Section                                                                |
 | asp-foreach                     | Foreach statement                                                      |
