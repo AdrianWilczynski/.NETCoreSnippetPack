@@ -75,7 +75,7 @@ A snippet pack for .NET Core.
 | roslynator-csx-warning-disable  | #pragma warning disable RCS1018, RCS1110 (useless in scripts)          |
 
 
-## Razor (aspnetcorerazor, razor, html) 
+## Razor (aspnetcorerazor, razor) 
 | Prefix                          | Renders                                                                |
 | ------------------------------- | ---------------------------------------------------------------------- |
 | asp-view                        | View Template                                                          |

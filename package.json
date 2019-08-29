@@ -36,10 +36,6 @@
                 "path": "./snippets/razor.json"
             },
             {
-                "language": "html",
-                "path": "./snippets/razor.json"
-            },
-            {
                 "language": "json",
                 "path": "./snippets/appsettings.json"
             },
