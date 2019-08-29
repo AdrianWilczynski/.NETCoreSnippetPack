@@ -28,11 +28,7 @@
                 "path": "./snippets/csharp.json"
             },
             {
-                "language": "aspnetcorerazor",
-                "path": "./snippets/razor.json"
-            },
-            {
-                "language": "razor",
+                "language": "html",
                 "path": "./snippets/razor.json"
             },
             {

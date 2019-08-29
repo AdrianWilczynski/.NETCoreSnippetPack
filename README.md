@@ -75,7 +75,7 @@ A snippet pack for .NET Core.
 | roslynator-csx-warning-disable  | #pragma warning disable RCS1018, RCS1110 (useless in scripts)          |
 
 
-## Razor (aspnetcorerazor, razor) 
+## Razor (html) 
 | Prefix                          | Renders                                                                |
 | ------------------------------- | ---------------------------------------------------------------------- |
 | asp-view                        | View Template                                                          |
@@ -85,10 +85,10 @@ A snippet pack for .NET Core.
 | asp-view-imports                | _ViewImports Template                                                  |
 | asp-form-group                  | Form Group - input field, label and validation span                    |
 | asp-form-group-bootstrap        | Form Group with Bootstrap's classes                                    |
-| asp-if                          | If statement                                                           |
-| asp-if-authenticated            | If IsAuthenticated statement                                           |
+| asp-if                          | If                                                                     |
+| asp-if-authenticated            | If with IsAuthenticated check                                          |
 | asp-section                     | Section                                                                |
-| asp-foreach                     | Foreach statement                                                      |
+| asp-foreach                     | Foreach                                                                |
 
 ### Tag Helpers
 | Prefix                          | Renders                                                                |
