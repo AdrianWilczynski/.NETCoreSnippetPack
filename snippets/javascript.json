@@ -2,6 +2,9 @@
     "Simple Webpack Config for ASP.NET Core": {
         "prefix": "asp-webpack",
         "body": [
+            "// Run 'npm install aspnet-webpack css-loader style-loader ts-loader typescript webpack webpack-cli webpack-dev-middleware --save-dev'.",
+            "// Add 'app.UseWebpackDevMiddleware()' in Startup.cs.",
+            "",
             "const path = require('path');",
             "",
             "module.exports = {",
@@ -31,7 +34,6 @@
             "\t\tpath: path.resolve(__dirname, '${4:wwwroot/dist}')",
             "\t}",
             "};"
-        ],
-        "description": "Run 'npm install aspnet-webpack css-loader style-loader ts-loader typescript webpack webpack-cli webpack-dev-middleware --save-dev'.\n\nAdd 'app.UseWebpackDevMiddleware()' in Startup.cs."
+        ]
     }
 }
