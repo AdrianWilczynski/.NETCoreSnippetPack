@@ -68,7 +68,7 @@ A snippet pack for .NET Core.
 | ------------------------------- | ---------------------------------------------------------------------- |
 | ds-nuget-reference              | NuGet Package Reference                                                |
 | ds-script-load                  | Script Reference                                                       |
-| ds-path                         | GetScriptPath Method                                                   |
+| ds-path                         | GetScriptFolder Method                                                   |
 
 ### Roslynator
 | Prefix                          | Renders                                                                |
