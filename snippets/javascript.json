@@ -1,0 +1,37 @@
+{
+    "Simple Webpack Config for ASP.NET Core": {
+        "prefix": "asp-webpack",
+        "body": [
+            "const path = require('path');",
+            "",
+            "module.exports = {",
+            "\tmode: 'development',",
+            "\tentry: {",
+            "\t\t${1:site}: '${2:./Client/ts/site.ts}'",
+            "\t},",
+            "\tresolve: {",
+            "\t\textensions: ['.ts', '.js']",
+            "\t},",
+            "\tmodule: {",
+            "\t\trules: [",
+            "\t\t\t{",
+            "\t\t\t\ttest: /\\.ts$/,",
+            "\t\t\t\tuse: 'ts-loader',",
+            "\t\t\t\texclude: /node_modules/",
+            "\t\t\t},",
+            "\t\t\t{",
+            "\t\t\t\ttest: /\\.css$/,",
+            "\t\t\t\tuse: ['style-loader', 'css-loader']",
+            "\t\t\t}",
+            "\t\t]",
+            "\t},",
+            "\toutput: {",
+            "\t\tfilename: '[name].js',",
+            "\t\tpublicPath: '${3:dist}',",
+            "\t\tpath: path.resolve(__dirname, '${4:wwwroot/dist}')",
+            "\t}",
+            "};"
+        ],
+        "description": "Run 'npm install aspnet-webpack css-loader style-loader ts-loader typescript webpack webpack-cli webpack-dev-middleware --save-dev'.\n\nAdd 'app.UseWebpackDevMiddleware()' in Startup.cs."
+    }
+}

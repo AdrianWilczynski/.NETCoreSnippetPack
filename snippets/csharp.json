@@ -511,6 +511,12 @@
 			"#load \"${1:scriptFile.csx}\""
 		]
 	},
+	"GetScriptPath Method": {
+		"prefix": "ds-path",
+		"body": [
+			"public static string GetScriptPath([CallerFilePath] string path = null) => path;"
+		]
+	},
 	"Disable Roslynator warnings in .csx file": {
 		"prefix": "roslynator-csx-warning-disable",
 		"body": [

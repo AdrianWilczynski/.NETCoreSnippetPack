@@ -68,6 +68,7 @@ A snippet pack for .NET Core.
 | ------------------------------- | ---------------------------------------------------------------------- |
 | ds-nuget-reference              | NuGet Package Reference                                                |
 | ds-script-load                  | Script Reference                                                       |
+| ds-path                         | GetScriptPath Method                                                   |
 
 ### Roslynator
 | Prefix                          | Renders                                                                |
@@ -145,3 +146,11 @@ A snippet pack for .NET Core.
 | Prefix                          | Renders                                                                |
 | --------------------------------| ---------------------------------------------------------------------- |
 | roslynator-ruleset              | Rules for ASP.NET Core (disable RCS1090: Call 'ConfigureAwait(false)') |
+
+
+## JavaScript (javascript) 
+
+### Webpack
+| Prefix                          | Renders                                                                |
+| --------------------------------| ---------------------------------------------------------------------- |
+| asp-webpack                     | Simple Webpack Config for ASP.NET Core                                 |

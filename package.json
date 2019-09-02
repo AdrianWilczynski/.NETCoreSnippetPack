@@ -50,6 +50,10 @@
             {
                 "language": "ignore",
                 "path": "./snippets/gitignore.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.json"
             }
         ]
     }
