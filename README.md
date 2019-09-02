@@ -70,11 +70,6 @@ A snippet pack for .NET Core.
 | ds-script-load                  | Script Reference                                                       |
 | ds-path                         | GetScriptFolder Method                                                   |
 
-### Roslynator
-| Prefix                          | Renders                                                                |
-| ------------------------------- | ---------------------------------------------------------------------- |
-| roslynator-csx-warning-disable  | #pragma warning disable RCS1018, RCS1110 (useless in scripts)          |
-
 
 ## Razor (html) 
 | Prefix                          | Renders                                                                |

@@ -517,12 +517,6 @@
 			"public static string GetScriptFolder([CallerFilePath] string path = null) => Path.GetDirectoryName(path);"
 		]
 	},
-	"Disable Roslynator warnings in .csx file": {
-		"prefix": "roslynator-csx-warning-disable",
-		"body": [
-			"#pragma warning disable RCS1018, RCS1110"
-		]
-	},
 	"SignalR Hub": {
 		"prefix": "sr-hub",
 		"body": [
