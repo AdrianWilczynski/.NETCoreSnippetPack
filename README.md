@@ -131,6 +131,14 @@ A snippet pack for .NET Core.
 | as-mssql-connection-string      | MS SQL LocalDB Connection String                                       |
 | as-sqlite-connection-string     | SQLite Connection String                                               |
 
+
+## .gitignore (ignore)
+
+| Prefix                          | Renders                                                                |
+| --------------------------------| ---------------------------------------------------------------------- |
+| vs-gitignore                    | Visual Studio .gitignore (source: https://github.com/github/gitignore) |
+
+
 ## ruleset (plaintext) 
 
 ### Roslynator

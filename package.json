@@ -46,6 +46,10 @@
             {
                 "language": "plaintext",
                 "path": "./snippets/ruleset.json"
+            },
+            {
+                "language": "ignore",
+                "path": "./snippets/gitignore.json"
             }
         ]
     }
