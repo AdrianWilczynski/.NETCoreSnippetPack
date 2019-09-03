@@ -212,6 +212,14 @@
             "</div>"
         ]
     },
+    "@functions Block": {
+        "prefix": "asp-functions",
+        "body": [
+            "@functions {",
+            "\t$0",
+            "}"
+        ]
+    },
     "If IsAuthenticated": {
         "prefix": "asp-if-authenticated",
         "body": [
@@ -239,12 +247,12 @@
         ]
     },
     "Foreach": {
-		"prefix": "asp-foreach",
-		"body": [
-			"@foreach (var ${1:item} in ${2:collection})",
-			"{",
-			"\t$0",
-			"}"
-		]
-	}
+        "prefix": "asp-foreach",
+        "body": [
+            "@foreach (var ${1:item} in ${2:collection})",
+            "{",
+            "\t$0",
+            "}"
+        ]
+    }
 }
