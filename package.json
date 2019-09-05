@@ -3,6 +3,10 @@
     "displayName": ".NET Core Snippet Pack",
     "description": "A snippet pack for .NET Core.",
     "publisher": "adrianwilczynski",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AdrianWilczynski/.NETCoreSnippetPack.git"
+    },
     "version": "1.28.0",
     "icon": "logo.png",
     "engines": {
