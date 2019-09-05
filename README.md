@@ -2,6 +2,8 @@
 
 A snippet pack for .NET Core.
 
+![In Action](img/inAction.gif)
+
 ## C\# (csharp)
 | Prefix                          | Renders                                                                |
 | ------------------------------- | ---------------------------------------------------------------------- |
