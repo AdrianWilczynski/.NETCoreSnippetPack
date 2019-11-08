@@ -16,5 +16,17 @@
         "body": [
             "<Content Include=\"${1:files\\**\\*}\" CopyToPublishDirectory=\"${2|PreserveNewest,Always,Never|}\" />"
         ]
+    },
+    "LangVersion": {
+        "prefix": "csproj-lang-version",
+        "body": [
+            "<LangVersion>${1|latest,latestMajor,preview,8.0,7.3,7.2,7.1,7|}</LangVersion>"
+        ]
+    },
+    "Nullable": {
+        "prefix": "csproj-nullable",
+        "body": [
+            "<Nullable>${1|enable,warnings,annotations,disable|}</Nullable>"
+        ]
     }
 }
