@@ -124,6 +124,8 @@ A snippet pack for .NET Core.
 | csproj-user-secrets              | UserSecretsId Element                                                 |
 | csproj-ruleset                   | CodeAnalysisRuleSet Element                                           |
 | csproj-copy-to-publish           | Content Element with CopyToPublishDirectory Attribute                 |
+| csproj-lang-version              | LangVersion Element                                                   |
+| csproj-nullable                  | Nullable Element                                                      |
 
 
 ## appsettings (json) 
