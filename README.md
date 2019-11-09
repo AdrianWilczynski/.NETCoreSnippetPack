@@ -30,6 +30,9 @@ A snippet pack for .NET Core.
 | dp-repo                           | Repository                                                           |
 | dp-repo-derived                   | Derived Repository                                                   |
 | dp-repo-interface                 | Repository Interface                                                 |
+| dp-repo-base                      | Base Repository                                                      |
+| dp-repo-base-interface            | Base Repository Interface                                            |
+| dp-repo-interface-derived         | Derived Repository Interface                                         |
 
 ### ASP.NET Core
 | Prefix                            | Renders                                                              |

@@ -656,5 +656,69 @@
 			"\t}",
 			"}"
 		]
+	},
+	"Base Repository": {
+		"prefix": "dp-repo-base",
+		"body": [
+			"using System;",
+			"using System.Collections.Generic;",
+			"using System.Linq;",
+			"using System.Threading.Tasks;",
+			"",
+			"namespace ${1:Namespace}",
+			"{",
+			"\tpublic abstract class ${TM_FILENAME_BASE}<TEntity> : ${2:I${TM_FILENAME_BASE}}<TEntity> where TEntity : ${3:BaseEntity}",
+			"\t{",
+			"\t\tprotected readonly ${4:ApplicationDbContext} _dbContext;",
+			"",
+			"\t\tprotected ${TM_FILENAME_BASE}($4 dbContext)",
+			"\t\t{",
+			"\t\t\t_dbContext = dbContext;",
+			"\t\t}",
+			"",
+			"\t\tpublic virtual TEntity Add(TEntity entity) => _dbContext.Set<TEntity>().Add(entity).Entity;",
+			"",
+			"\t\tpublic virtual void Remove(TEntity entity) => _dbContext.Set<TEntity>().Remove(entity);",
+			"",
+			"\t\tpublic virtual IEnumerable<TEntity> ListAll() => _dbContext.Set<TEntity>().ToList();",
+			"",
+			"\t\tpublic virtual TEntity GetById(${5:int} id) => _dbContext.Set<TEntity>().Find(id);",
+			"\t}",
+			"}"
+		]
+	},
+	"Base Repository Interface": {
+		"prefix": "dp-repo-base-interface",
+		"body": [
+			"using System;",
+			"using System.Collections.Generic;",
+			"using System.Threading.Tasks;",
+			"",
+			"namespace ${1:Namespace}",
+			"{",
+			"\tpublic interface ${TM_FILENAME_BASE}<TEntity> where TEntity : ${2:BaseEntity}",
+			"\t{",
+			"\t\tTEntity Add(TEntity entity);",
+			"\t\tvoid Remove(TEntity entity);",
+			"\t\tIEnumerable<TEntity> ListAll();",
+			"\t\tTEntity GetById(${3:int} id);",
+			"\t}",
+			"}"
+		]
+	},
+	"Derived Repository Interface": {
+		"prefix": "dp-repo-interface-derived",
+		"body": [
+			"using System;",
+			"using System.Collections.Generic;",
+			"using System.Threading.Tasks;",
+			"",
+			"namespace ${1:Namespace}",
+			"{",
+			"\tpublic interface ${TM_FILENAME_BASE} : ${2:IBaseRepository}<${3:Entity}>",
+			"\t{",
+			"\t}",
+			"}"
+		]
 	}
 }
