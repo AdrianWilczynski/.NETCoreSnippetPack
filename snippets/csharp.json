@@ -33,6 +33,18 @@
 			"}"
 		]
 	},
+	"Enum and Namespace": {
+		"prefix": "enum-namespace",
+		"body": [
+			"namespace ${1:Namespace}",
+			"{",
+			"\tpublic enum ${TM_FILENAME_BASE}",
+			"\t{",
+			"\t\t$0",
+			"\t}",
+			"}"
+		]
+	},
 	"Guess Namespace": {
 		"prefix": "namespace-guess",
 		"body": [

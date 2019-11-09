@@ -11,6 +11,7 @@ A snippet pack for .NET Core.
 | ------------------------------- | ---------------------------------------------------------------------- |
 | class-namespace                 | Class and Namespace with some common Usings                            |
 | interface-namespace             | Interface and Namespace with some common Usings                        |
+| enum-namespace                  | Enum and Namespace                                                     |
 | namespace-guess                 | Namespace based on directory structure*                                |
 | method(-async)                  | Method                                                                 |
 | field                           | Field                                                                  |
