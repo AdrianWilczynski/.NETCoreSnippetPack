@@ -212,6 +212,26 @@
             "</div>"
         ]
     },
+    "Select Form Group": {
+        "prefix": "asp-select-form-group",
+        "body": [
+            "<div>",
+            "\t<label asp-for=\"${1:ModelProperty}\"></label>",
+            "\t<select asp-for=\"$1\" asp-items=\"Html.GetEnumSelectList<${2:Enum}>()\"></select>",
+            "\t<span asp-validation-for=\"$1\"></span>",
+            "</div>"
+        ]
+    },
+    "Textarea Form Group": {
+        "prefix": "asp-textarea-form-group",
+        "body": [
+            "<div>",
+            "\t<label asp-for=\"${1:ModelProperty}\"></label>",
+            "\t<textarea asp-for=\"$1\"></textarea>",
+            "\t<span asp-validation-for=\"$1\"></span>",
+            "</div>"
+        ]
+    },
     "@functions Block": {
         "prefix": "asp-functions",
         "body": [
