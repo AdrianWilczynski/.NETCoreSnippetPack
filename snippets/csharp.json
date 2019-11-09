@@ -554,5 +554,107 @@
 			"\tawait base.OnDisconnectedAsync(exception);",
 			"}"
 		]
+	},
+	"Unit of Work": {
+		"prefix": "dp-uow",
+		"body": [
+			"namespace ${1:Namespace}",
+			"{",
+			"\tpublic class ${TM_FILENAME_BASE} : I${TM_FILENAME_BASE}",
+			"\t{",
+			"\t\tprivate readonly ${2:ApplicationDbContext} _dbContext;",
+			"",
+			"\t\tpublic ${TM_FILENAME_BASE}($2 dbContext)",
+			"\t\t{",
+			"\t\t\t_dbContext = dbContext;",
+			"\t\t}",
+			"",
+			"\t\tprivate ${3:ItemRepository} ${4:_itemRepository};",
+			"\t\tpublic I$3 ${5:Items} => $4 ??= new $3(_dbContext);",
+			"",
+			"\t\tpublic void Complete() => _dbContext.SaveChanges();",
+			"\t}",
+			"}"
+		]
+	},
+	"Unit of Work Interface": {
+		"prefix": "dp-uow-interface",
+		"body": [
+			"namespace ${1:Namespace}",
+			"{",
+			"\tpublic interface ${TM_FILENAME_BASE}",
+			"\t{",
+			"\t\t${2:IItemRepository} ${3:Items} { get; }",
+			"",
+			"\t\tvoid Complete();",
+			"\t}",
+			"}"
+		]
+	},
+	"Repository": {
+		"prefix": "dp-repo",
+		"body": [
+			"using System;",
+			"using System.Collections.Generic;",
+			"using System.Linq;",
+			"using System.Threading.Tasks;",
+			"",
+			"namespace ${1:Namespace}",
+			"{",
+			"\tpublic class ${TM_FILENAME_BASE} : I${TM_FILENAME_BASE}",
+			"\t{",
+			"\t\tprivate readonly ${2:ApplicationDbContext} _dbContext;",
+			"",
+			"\t\tpublic ${TM_FILENAME_BASE}($2 dbContext)",
+			"\t\t{",
+			"\t\t\t_dbContext = dbContext;",
+			"\t\t}",
+			"",
+			"\t\tpublic ${3:Item} Add($3 ${4:item}) => _dbContext.${5:Items}.Add($4).Entity;",
+			"",
+			"\t\tpublic void Remove($3 $4) => _dbContext.$5.Remove($4);",
+			"",
+			"\t\tpublic IEnumerable<$3> ListAll() => _dbContext.$5.ToList();",
+			"",
+			"\t\tpublic $3 GetById(${6:int} id) => _dbContext.$5.Find(id);",
+			"\t}",
+			"}"
+		]
+	},
+	"Derived Repository": {
+		"prefix": "dp-repo-derived",
+		"body": [
+			"using System;",
+			"using System.Collections.Generic;",
+			"using System.Linq;",
+			"using System.Threading.Tasks;",
+			"",
+			"namespace ${1:Namespace}",
+			"{",
+			"\tpublic class ${TM_FILENAME_BASE} : ${2:BaseRepository}<${3:Item}>, I${TM_FILENAME_BASE}",
+			"\t{",
+			"\t\tpublic ${TM_FILENAME_BASE}(${4:ApplicationDbContext} dbContext) : base(dbContext) { }",
+			"\t}",
+			"}"
+		]
+	},
+	"Repository Interface": {
+		"prefix": "dp-repo-interface",
+		"body": [
+			"using System;",
+			"using System.Collections.Generic;",
+			"using System.Threading.Tasks;",
+			"",
+			"namespace ${1:Namespace}",
+			"{",
+			"\tpublic interface ${TM_FILENAME_BASE}",
+			"\t{",
+			"\t\t${2:Item} Add($2 ${3:item});",
+			"\t\tvoid Remove($2 $3);",
+			"\t\tIEnumerable<$2> ListAll();",
+			"\t\t$2 GetById(${4:int} id);",
+			"\t}",
+			"}"
+		]
 	}
 }

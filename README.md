@@ -22,6 +22,15 @@ A snippet pack for .NET Core.
 
 \* For namespace guessing to work your project's root folder must be in one of the following directories: repos, src, test, tests, projects, desktop. Folder name matching is case insensitive.
 
+### Design Patterns
+| Prefix                            | Renders                                                              |
+| --------------------------------- | -------------------------------------------------------------------- |
+| dp-uow                            | Unit of Work                                                         |
+| dp-uow-interface                  | Unit of Work Interface                                               |
+| dp-repo                           | Repository                                                           |
+| dp-repo-derived                   | Derived Repository                                                   |
+| dp-repo-interface                 | Repository Interface                                                 |
+
 ### ASP.NET Core
 | Prefix                            | Renders                                                              |
 | --------------------------------- | -------------------------------------------------------------------- |
