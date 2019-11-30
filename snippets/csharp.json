@@ -732,5 +732,17 @@
 			"\t}",
 			"}"
 		]
+	},
+	"#pragma warning disable directive": {
+		"prefix": "warning-disable",
+		"body": [
+			"#pragma warning disable ${1:RCS1090}"
+		]
+	},
+	"#pragma warning restore directive": {
+		"prefix": "warning-restore",
+		"body": [
+			"#pragma warning restore ${1:RCS1090}"
+		]
 	}
 }

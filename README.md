@@ -23,6 +23,12 @@ A snippet pack for .NET Core.
 
 \* For namespace guessing to work your project's root folder must be in one of the following directories: repos, src, test, tests, projects, desktop. Folder name matching is case insensitive.
 
+### Preprocessor Directives
+| Prefix                          | Renders                                                                |
+| ------------------------------- | ---------------------------------------------------------------------- |
+| warning-disable                 | #pragma warning disable directive                                      |
+| warning-restore                 | #pragma warning restore directive                                      |
+
 ### Design Patterns
 | Prefix                            | Renders                                                              |
 | --------------------------------- | -------------------------------------------------------------------- |
@@ -85,7 +91,7 @@ A snippet pack for .NET Core.
 | ------------------------------- | ---------------------------------------------------------------------- |
 | ds-nuget-reference              | NuGet Package Reference                                                |
 | ds-script-load                  | Script Reference                                                       |
-| ds-path                         | GetScriptFolder Method                                                   |
+| ds-path                         | GetScriptFolder Method                                                 |
 
 
 ## Razor (html) 
