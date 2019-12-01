@@ -91,7 +91,7 @@
 	"Expression Bodied Property": {
 		"prefix": "prop-exp",
 		"body": [
-			"public ${1:int} ${2:MyProperty} => $0;"
+			"${1:public} ${2:int} ${3:MyProperty} => $0;"
 		]
 	},
 	"Foreach with index": {
