@@ -14,7 +14,9 @@ A snippet pack for .NET Core.
 | enum-namespace                  | Enum and Namespace                                                     |
 | namespace-guess                 | Namespace based on directory structure*                                |
 | method(-async)                  | Method                                                                 |
+| method-exp(-async)              | Expression Bodied Method                                               |
 | field                           | Field                                                                  |
+| prop-exp                        | Expression Bodied Property                                             |
 | foreach-index                   | Foreach with index                                                     |
 | _                               | Underscored name based on preceding type                               |
 | c                               | CamelCased name based on preceding type                                |
