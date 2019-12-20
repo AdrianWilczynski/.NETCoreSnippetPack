@@ -2,12 +2,16 @@
     "Simple Webpack Config for ASP.NET Core": {
         "prefix": "asp-webpack",
         "body": [
-            "// Run 'npm install aspnet-webpack css-loader style-loader ts-loader typescript webpack webpack-cli webpack-dev-middleware --save-dev'.",
-            "// Add 'app.UseWebpackDevMiddleware()' in Startup.cs.",
+            "//@ts-check",
+            "",
+            "// 1) Run 'npm install css-loader style-loader ts-loader typescript webpack webpack-cli --save-dev'.",
+            "// 2) Run 'tsc --init' to create tsconfig.json file.",
+            "// 3) Run 'npx webpack' to compile.",
             "",
             "const path = require('path');",
             "",
-            "module.exports = {",
+            "/**@type {import('webpack').Configuration}*/",
+            "const config = {",
             "\tmode: 'development',",
             "\tentry: {",
             "\t\t${1:site}: '${2:./Client/ts/site.ts}'",
@@ -33,7 +37,9 @@
             "\t\tpublicPath: '${3:dist}',",
             "\t\tpath: path.resolve(__dirname, '${4:wwwroot/dist}')",
             "\t}",
-            "};"
+            "};",
+            "",
+            "module.exports = config;"
         ]
     }
 }
