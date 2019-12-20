@@ -38,7 +38,9 @@ A snippet pack for .NET Core.
 | dp-uow-interface                  | Unit of Work Interface                                               |
 | dp-repo                           | Repository                                                           |
 | dp-repo-derived                   | Derived Repository                                                   |
+| dp-repo-standalone                | Standalone Repository                                                |
 | dp-repo-interface                 | Repository Interface                                                 |
+| dp-repo-interface-standalone      | Standalone Repository Interface                                      |
 | dp-repo-base                      | Base Repository                                                      |
 | dp-repo-base-interface            | Base Repository Interface                                            |
 | dp-repo-interface-derived         | Derived Repository Interface                                         |
