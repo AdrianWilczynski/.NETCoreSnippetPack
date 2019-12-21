@@ -2,7 +2,7 @@
 
 *Created with https://vscodesnippetgenerator.azurewebsites.net/ (https://github.com/AdrianWilczynski/VSCodeSnippetGenerator)*
 
-A snippet pack for .NET Core.
+A pack of around **110** snippets for .NET Core.
 
 ![In Action](img/inAction.gif)
 
