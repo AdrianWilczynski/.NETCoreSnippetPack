@@ -17,6 +17,7 @@ A snippet pack for .NET Core.
 | method-exp(-async)              | Expression Bodied Method                                               |
 | field                           | Field                                                                  |
 | prop-exp                        | Expression Bodied Property                                             |
+| propp                           | Property with changeable Access Modifier                               |
 | foreach-index                   | Foreach with index                                                     |
 | _                               | Underscored name based on preceding type                               |
 | c                               | CamelCased name based on preceding type                                |
