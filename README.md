@@ -182,3 +182,10 @@ A pack of around **110** snippets for .NET Core.
 | Prefix                          | Renders                                                                |
 | --------------------------------| ---------------------------------------------------------------------- |
 | asp-webpack                     | Simple Webpack Config for ASP.NET Core                                 |
+
+
+## EditorConfig (properties) 
+
+| Prefix                          | Renders                                                                |
+| --------------------------------| ---------------------------------------------------------------------- |
+| ec-underscored-field            | Underscored camel case field names Config                              |
