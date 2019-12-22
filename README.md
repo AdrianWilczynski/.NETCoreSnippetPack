@@ -175,6 +175,18 @@ A pack of around **110** snippets for .NET Core.
 | --------------------------------| ---------------------------------------------------------------------- |
 | roslynator-ruleset              | Rules for ASP.NET Core (disable RCS1090: Call 'ConfigureAwait(false)') |
 
+## HTML (html) 
+
+| Prefix                          | Renders                                                                |
+| --------------------------------| ---------------------------------------------------------------------- |
+| bootstrap-cdn                   | Link to Bootstrap & various themes*                                    |
+
+\* Themes: 
+- MDBootstrap (https://github.com/mdbootstrap/bootstrap-material-design), 
+- Material Design for Bootstrap (https://github.com/FezVrasta/bootstrap-material-design),
+- Bootswatch (https://github.com/thomaspark/bootswatch),
+- HackerThemes (https://github.com/HackerThemes/theme-machine), 
+- Tophat Themes (https://github.com/themesguide/top-hat) 
 
 ## JavaScript (javascript) 
 

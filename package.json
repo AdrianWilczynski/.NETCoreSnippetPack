@@ -62,6 +62,10 @@
             {
                 "language": "properties",
                 "path": "./snippets/editorconfig.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/html.json"
             }
         ]
     }
