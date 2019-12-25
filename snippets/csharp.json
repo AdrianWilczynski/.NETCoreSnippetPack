@@ -109,6 +109,12 @@
 			"}"
 		]
 	},
+	"Throw Exception": {
+		"prefix": "throw",
+		"body": [
+			"throw new ${1:ArgumentException()};"
+		]
+	},
 	"CamelCase Name": {
 		"prefix": "c",
 		"body": "${TM_CURRENT_LINE/(^(([^<>]|<.*>|=>)*[ \\t(,])?(\\w+(<[\\w \\t,.<>[\\]()]+>)?\\.)*I?([A-Z]|(?<!I)[a-z_])(\\w*)(<[\\w \\t,.<>[\\]()]+>)?(\\[[ \\t,]*])*[ \\t]+c(?!\\w))|(.*)/${6:/downcase}$7/g}",

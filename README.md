@@ -19,6 +19,7 @@ A pack of around **110** snippets for .NET Core.
 | prop-exp                        | Expression Bodied Property                                             |
 | propp                           | Property with changeable Access Modifier                               |
 | foreach-index                   | Foreach with index                                                     |
+| throw                           | Throw Exception                                                        |
 | _                               | Underscored name based on preceding type                               |
 | c                               | CamelCased name based on preceding type                                |
 | p                               | PascalCased name based on preceding type                               |
