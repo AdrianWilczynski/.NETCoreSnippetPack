@@ -17,6 +17,7 @@ A pack of around **110** snippets for .NET Core.
 | method-exp(-async)              | Expression Bodied Method                                               |
 | field                           | Field                                                                  |
 | prop-exp                        | Expression Bodied Property                                             |
+| propfull-exp                    | Expression Bodied Property and Backing Field                           |
 | propp                           | Property with changeable Access Modifier                               |
 | foreach-index                   | Foreach with index                                                     |
 | throw                           | Throw Exception                                                        |

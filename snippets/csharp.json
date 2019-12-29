@@ -100,6 +100,18 @@
 			"${1:public} ${2:int} ${3:MyProperty} => $0;"
 		]
 	},
+	"Expression Bodied Property and Backing Field": {
+		"prefix": "propfull-exp",
+		"body": [
+			"private ${1:int} ${2:_myVar};",
+			"",
+			"public $1 ${3:MyProperty}",
+			"{",
+			"\tget => $2;",
+			"\tset => $2 = value;",
+			"}"
+		]
+	},
 	"Foreach with index": {
 		"prefix": "foreach-index",
 		"body": [
