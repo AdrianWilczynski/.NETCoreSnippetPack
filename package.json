@@ -7,7 +7,7 @@
         "type": "git",
         "url": "https://github.com/AdrianWilczynski/.NETCoreSnippetPack.git"
     },
-    "version": "1.42.0",
+    "version": "1.43.0",
     "icon": "img/logo.png",
     "engines": {
         "vscode": "^1.31.0"
