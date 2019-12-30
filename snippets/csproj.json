@@ -36,5 +36,11 @@
             "\t<Exec Command=\"${2:Command}\" />",
             "</Target>"
         ]
+    },
+    "Condition - if (not) Release": {
+        "prefix": "csproj-if-release",
+        "body": [
+            "Condition=\" '$(Configuration)' ${1|==,!=|} 'Release' \""
+        ]
     }
 }

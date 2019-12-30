@@ -155,6 +155,7 @@ A pack of around **110** snippets for .NET Core.
 | csproj-lang-version              | LangVersion Element                                                   |
 | csproj-nullable                  | Nullable Element                                                      |
 | csproj-exec-before-build         | Exec before Build                                                     |
+| csproj-if-release                | Condition - if (not) Release                                          |
 
 
 ## appsettings (json) 
