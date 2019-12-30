@@ -28,5 +28,13 @@
         "body": [
             "<Nullable>${1|enable,warnings,annotations,disable|}</Nullable>"
         ]
+    },
+    "Exec before Build": {
+        "prefix": "csproj-exec-before-build",
+        "body": [
+            "<Target Name=\"${1:Name}\" BeforeTargets=\"Build\">",
+            "\t<Exec Command=\"${2:Command}\" />",
+            "</Target>"
+        ]
     }
 }

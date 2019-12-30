@@ -154,6 +154,7 @@ A pack of around **110** snippets for .NET Core.
 | csproj-copy-to-publish           | Content Element with CopyToPublishDirectory Attribute                 |
 | csproj-lang-version              | LangVersion Element                                                   |
 | csproj-nullable                  | Nullable Element                                                      |
+| csproj-exec-before-build         | Exec before Build                                                     |
 
 
 ## appsettings (json) 
