@@ -205,3 +205,9 @@ A pack of around **110** snippets for .NET Core.
 | Prefix                          | Renders                                                                |
 | --------------------------------| ---------------------------------------------------------------------- |
 | ec-underscored-field            | Underscored camel case field names Config                              |
+
+## License (markdown, plaintext) 
+
+| Prefix                          | Renders                                                                |
+| --------------------------------| ---------------------------------------------------------------------- |
+| license-mit                     | MIT License                                                            |

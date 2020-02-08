@@ -66,6 +66,14 @@
             {
                 "language": "html",
                 "path": "./snippets/html.json"
+            },
+            {
+                "language": "markdown",
+                "path": "./snippets/license.json"
+            },
+            {
+                "language": "plaintext",
+                "path": "./snippets/license.json"
             }
         ]
     }
