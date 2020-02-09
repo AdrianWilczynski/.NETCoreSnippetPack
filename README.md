@@ -191,6 +191,7 @@ A pack of around **110** snippets for .NET Core.
 - Bootswatch (https://github.com/thomaspark/bootswatch),
 - HackerThemes (https://github.com/HackerThemes/theme-machine), 
 - Tophat Themes (https://github.com/themesguide/top-hat) 
+- Bootcatch (https://github.com/ajaymarathe/bootcatch-themes)
 
 ## JavaScript (javascript) 
 

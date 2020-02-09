@@ -18,14 +18,24 @@ private var hackerThemes = new[]
 
 private var topHat = new[]
 {
-    "deeply", "electro", "graymor", "hollar", "lymcha", "mickie", "minco", "monotone", "preptor", "skeeblu", "sunset", "wandoo"
+    "deeply", "electro", "graymor", "hollar", "lymcha", "mickie", "minco", "monotone", "preptor",
+    "skeeblu", "sunset", "wandoo"
 }.Select(theme => $"https://themesguide.github.io/top-hat/dist/{theme}/theme.min.css");
+
+private var bootcatchThemes = new[]
+{
+    "angular-material", "apollo", "bazooka", "blossom", "bulma", "chocolate", "comely",
+    "darkly", "epic", "foresty", "framework7-UI", "grace", "hero", "lightly", "material",
+    "mayablue", "orangely", "peace", "pensive", "pilly", "shadow", "simply", "slateblue",
+    "solitude", "squarely", "supine"
+}.Select(theme => $"https://unpkg.com/bootcatch-themes@2.3.0/dist/{theme}/bootstrap.min.css");
 
 private var all = new[] { bootstrap }
     .Append(mdbootstrap)
     .Append(materialDesignForBootstrap)
     .Concat(bootswatch)
     .Concat(hackerThemes)
-    .Concat(topHat);
+    .Concat(topHat)
+    .Concat(bootcatchThemes);
 
 WriteLine(string.Join(",", all));
