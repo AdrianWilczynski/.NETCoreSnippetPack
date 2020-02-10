@@ -101,6 +101,7 @@ A pack of around **110** snippets for .NET Core.
 | ds-nuget-reference              | NuGet Package Reference                                                |
 | ds-script-load                  | Script Reference                                                       |
 | ds-path                         | GetScriptFolder Method                                                 |
+| ds-nuget-references-common      | Common NuGet Package References                                        |
 
 
 ## Razor (html) 
