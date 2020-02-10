@@ -16,6 +16,23 @@
 			"}"
 		]
 	},
+	"Static Class and Namespace": {
+		"prefix": "class-static-namespace",
+		"body": [
+			"using System;",
+			"using System.Collections.Generic;",
+			"using System.Linq;",
+			"using System.Threading.Tasks;",
+			"",
+			"namespace ${1:Namespace}",
+			"{",
+			"\tpublic static class ${TM_FILENAME_BASE}",
+			"\t{",
+			"\t\t$0",
+			"\t}",
+			"}"
+		]
+	},
 	"Interface and Namespace": {
 		"prefix": "interface-namespace",
 		"body": [
@@ -42,6 +59,15 @@
 			"\t{",
 			"\t\t$0",
 			"\t}",
+			"}"
+		]
+	},
+	"Static Class": {
+		"prefix": "class-static",
+		"body": [
+			"${1:public} static class ${2:$TM_FILENAME_BASE}",
+			"{",
+			"\t$0",
 			"}"
 		]
 	},

@@ -10,8 +10,10 @@ A pack of around **110** snippets for .NET Core.
 | Prefix                          | Renders                                                                |
 | ------------------------------- | ---------------------------------------------------------------------- |
 | class-namespace                 | Class and Namespace with some common Usings                            |
-| interface-namespace             | Interface and Namespace with some common Usings                        |
+| class-static-namespace          | Static Class and Namespace                                             |
+| interface-namespace             | Interface and Namespace                                                |
 | enum-namespace                  | Enum and Namespace                                                     |
+| class-static                    | Static Class                                                           |
 | namespace-guess                 | Namespace based on directory structure*                                |
 | method(-async)                  | Method                                                                 |
 | method-exp(-async)              | Expression Bodied Method                                               |
