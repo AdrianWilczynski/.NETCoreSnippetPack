@@ -588,7 +588,7 @@
 	"Common NuGet Package References": {
 		"prefix": "ds-nuget-references-common",
 		"body": [
-			"#r \"${1|nuget: Newtonsoft.Json\\, 12.0.3,nuget: AngleSharp\\, 0.13.0,nuget: Flurl.Http\\, 2.4.2,nuget: Dapper\\, 2.0.30,nuget: System.Data.SQLite\\, 1.0.112|}\""
+			"#r \"nuget: ${1|Newtonsoft.Json\\, 12.0.3,AngleSharp\\, 0.13.0,Flurl.Http\\, 2.4.2,Dapper\\, 2.0.30,System.Data.SQLite\\, 1.0.112,DotMarkdown\\, 0.1.0|}\""
 		]
 	},
 	"Script Reference": {
