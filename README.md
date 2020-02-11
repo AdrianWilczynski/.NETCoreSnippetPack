@@ -23,7 +23,7 @@ A pack of around **120** snippets for .NET Core.
 | propfull-exp                    | Expression Bodied Property and Backing Field                           |
 | propp                           | Property with changeable Access Modifier                               |
 | foreach-index                   | Foreach with index                                                     |
-| switch-exp                      | Switch Expressions                                                     |
+| switch-exp                      | Switch Expression                                                      |
 | throw                           | Throw Exception                                                        |
 | _                               | Underscored name based on preceding type                               |
 | c                               | CamelCased name based on preceding type                                |
