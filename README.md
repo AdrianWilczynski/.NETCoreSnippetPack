@@ -18,10 +18,12 @@ A pack of around **120** snippets for .NET Core.
 | method(-async)                  | Method                                                                 |
 | method-exp(-async)              | Expression Bodied Method                                               |
 | field                           | Field                                                                  |
+| const                           | Constant Field                                                         |
 | prop-exp                        | Expression Bodied Property                                             |
 | propfull-exp                    | Expression Bodied Property and Backing Field                           |
 | propp                           | Property with changeable Access Modifier                               |
 | foreach-index                   | Foreach with index                                                     |
+| switch-exp                      | Switch Expressions                                                     |
 | throw                           | Throw Exception                                                        |
 | _                               | Underscored name based on preceding type                               |
 | c                               | CamelCased name based on preceding type                                |

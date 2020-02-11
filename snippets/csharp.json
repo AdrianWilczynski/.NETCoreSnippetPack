@@ -114,6 +114,12 @@
 			"private ${1:readonly} ${2:Type} ${3:_name};"
 		]
 	},
+	"Constant Field": {
+		"prefix": "const",
+		"body": [
+			"${1:public} const ${2:string} ${3:Name} = ${4:\"\"};"
+		]
+	},
 	"Property with changeable Access Modifier": {
 		"prefix": "propp",
 		"body": [
@@ -145,6 +151,15 @@
 			"{",
 			"\t$0",
 			"}"
+		]
+	},
+	"Switch Expressions": {
+		"prefix": "switch-exp",
+		"body": [
+			"${1:value} switch  ",
+			"{  ",
+			"\t${2:case} => $3",
+			"};"
 		]
 	},
 	"Throw Exception": {
