@@ -165,7 +165,7 @@
 	"Switch Expression": {
 		"prefix": "switch-exp",
 		"body": [
-			"${1:value} switch  ",
+			"${1:value} switch",
 			"{  ",
 			"\t${2:case} => $3",
 			"}"
